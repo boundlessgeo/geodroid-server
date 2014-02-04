@@ -5,9 +5,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 
 import org.geodroid.app.GeoApplication;
 import org.geodroid.app.GeoDataRepository;
@@ -16,6 +14,7 @@ import org.jeo.data.DataRepositoryView;
 import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
+import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 
@@ -34,6 +33,10 @@ public class GeodroidServer extends GeoApplication {
         return (GeodroidServer) GeoApplication.get(activity);
     }
 
+    public static GeodroidServer get(Service service) {
+        return (GeodroidServer) GeoApplication.get(service);
+    }
+
     public static BuildInfo getBuildInfo(Context context) {
         return new BuildInfo(context.getResources().openRawResource(R.raw.version), context);
     }
@@ -47,20 +50,9 @@ public class GeodroidServer extends GeoApplication {
     ScheduledExecutorService executor; 
 
     public GeodroidServer() {
-        status = Status.UNKNOWN;
+        status = Status.OFFLINE;
         callbacks = new ArrayList<StatusCallback>();
-
-        executor = Executors.newScheduledThreadPool(1);
-        executor.scheduleAtFixedRate(new Runnable() {
-            @Override
-            public void run() {
-                status = ping();
-                dispatch(status);
-            }
-        }, 0, 4, TimeUnit.SECONDS);
-
     }
-
     
     public Exception getError() {
         return error;
@@ -68,6 +60,13 @@ public class GeodroidServer extends GeoApplication {
 
     public void setError(Exception error) {
         this.error = error;
+    }
+
+    public void setStatus(Status status) {
+        if (this.status != status) {
+            this.status = status;
+            dispatch(status);
+        }
     }
 
     public Status getStatus() {

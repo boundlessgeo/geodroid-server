@@ -125,12 +125,10 @@ public class GeodroidServerActivity extends Activity implements NavFragment.Call
 
     void initStatusMenuItem(Menu menu) {
         MenuItem item = menu.findItem(R.id.menu_status);
-        item.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
 
         status = new Button(this);
-        status.setEnabled(false);
-        status.setBackgroundResource(R.drawable.status_btn_disabled);
-        //status.setTextColor(getResources().getColor(R.color.text_darker));
+        status = new Button(this, null, R.style.TextSmallBold);
+        onStatusUpdate(GeodroidServer.get(this).getStatus());
 
         status.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,7 +150,6 @@ public class GeodroidServerActivity extends Activity implements NavFragment.Call
                 }
             }
         });
-
 
         item.setActionView(status);
     }

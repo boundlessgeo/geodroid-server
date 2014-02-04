@@ -77,17 +77,26 @@ public class GeodroidServerService extends Service {
 
         try {
             repo = GeoApplication.get(this).createDataRepository();
-            server = new NanoServer(p.getPort(), p.getWebDirectory(), p.getNumThreads(), repo, handlers);
+            server = new NanoServer(p.getPort(), p.getWebDirectory(), p.getNumThreads(), repo, handlers) {
+
+                @Override
+                protected void notifyStarted() {
+                    GeodroidServerService.this.notifyStarted();
+                }
+
+                @Override
+                protected void notifyStopped() {
+                    GeodroidServerService.this.notifyStopped();
+                }
+
+            };
         }
         catch(IOException e) {
             Log.wtf(TAG, "NanoHTTPD did not start", e);
         }
-
-        Log.i(TAG, "GeoDroid Server started");
-        notifyStarted();
     }
 
-    void notifyStarted() {
+    private void notifyStarted() {
         Preferences p = new Preferences(this);
         
         Intent intent = new Intent(Intent.ACTION_VIEW, 
@@ -105,9 +114,12 @@ public class GeodroidServerService extends Service {
         NotificationManager nMgr = 
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         nMgr.notify(1, nBuilder.getNotification());
+        Log.i(TAG, "GeoDroid Server started");
+
+        GeodroidServer.get(GeodroidServerService.this).setStatus(GeodroidServer.Status.ONLINE);
     }
 
-    void notifyStopped() {
+    private void notifyStopped() {
         Resources res = getResources();
         Notification.Builder nBuilder = new Notification.Builder(this)
             .setContentTitle(res.getText(R.string.app_name_short))
@@ -117,6 +129,9 @@ public class GeodroidServerService extends Service {
         NotificationManager nMgr = 
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         nMgr.notify(2, nBuilder.getNotification());
+        Log.i(TAG, "GeoDroid Server stopped");
+
+        GeodroidServer.get(GeodroidServerService.this).setStatus(GeodroidServer.Status.OFFLINE);
     }
 
     @Override
@@ -132,9 +147,6 @@ public class GeodroidServerService extends Service {
         }
 
         repo.close();
-
-        Log.i(TAG, "GeoDroid Server stopped");
-        notifyStopped();
     }
 
     @Override
