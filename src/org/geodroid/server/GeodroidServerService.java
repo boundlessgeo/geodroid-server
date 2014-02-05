@@ -32,12 +32,15 @@ import android.graphics.Canvas;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Binder;
+import android.os.Debug;
 import android.os.IBinder;
 //import android.support.v4.app.NotificationCompat;
 //import android.support.v4.app.TaskStackBuilder;
 //import android.support.v4.app.NotificationCompat;
 //import android.support.v4.app.TaskStackBuilder;
 import android.util.Log;
+import java.util.Properties;
+import org.jeo.nano.NanoHTTPD;
 
 public class GeodroidServerService extends Service {
 
@@ -75,6 +78,11 @@ public class GeodroidServerService extends Service {
         handlers.add(new StyleHandler());
         handlers.add(new AppsHandler(p.getAppsDirectory()));
 
+        // to enable tracing, set the tag level to DEBUG:
+        // $ adb shell setprop log.tag.GeodroidServerTracing DEBUG
+        // the service must be restarted to take effect
+        final boolean enableTracing = Log.isLoggable(TAG + "Tracing", Log.DEBUG);
+
         try {
             repo = GeoApplication.get(this).createDataRepository();
             server = new NanoServer(p.getPort(), p.getWebDirectory(), p.getNumThreads(), repo, handlers) {
@@ -87,6 +95,18 @@ public class GeodroidServerService extends Service {
                 @Override
                 protected void notifyStopped() {
                     GeodroidServerService.this.notifyStopped();
+                }
+
+                @Override
+                public NanoHTTPD.Response serve(String uri, String method, Properties header, Properties parms, Properties files) {
+                    if (enableTracing) {
+                        Debug.startMethodTracing(TAG, 64*1024*1024);
+                    }
+                    NanoHTTPD.Response response = super.serve(uri, method, header, parms, files);
+                    if (enableTracing) {
+                        Debug.stopMethodTracing();
+                    }
+                    return response;
                 }
 
             };
