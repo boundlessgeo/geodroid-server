@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Boundless : Boundless Android SDK : Data Service</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="shortcut icon" href="_static/favicon.ico"/>
+      <link rel="top" title="Boundless Android" href="index.html" />
+      <link rel="next" title="Feature Service" href="feature-service.html" />
+      <link rel="prev" title="Feature Service" href="feature-service.html" />
+
+<style>
+  @font-face {
+    font-family: 'cantarell';
+    src: url('_static/fonts/cantarell-regular-webfont.eot');
+    src: url('_static/fonts/cantarell-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_static/fonts/cantarell-regular-webfont.woff') format('woff'),
+         url('_static/fonts/cantarell-regular-webfont.ttf') format('truetype'),
+         url('_static/fonts/cantarell-regular-webfont.svg#cantarellregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'cantarell';
+    src: url('_static/fonts/cantarell-bold-webfont.eot');
+    src: url('_static/fonts/cantarell-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_static/fonts/cantarell-bold-webfont.woff') format('woff'),
+         url('_static/fonts/cantarell-bold-webfont.ttf') format('truetype'),
+         url('_static/fonts/cantarell-bold-webfont.svg#cantarellbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'cantarell';
+    src: url('_static/fonts/cantarell-oblique-webfont.eot');
+    src: url('_static/fonts/cantarell-oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_static/fonts/cantarell-oblique-webfont.woff') format('woff'),
+         url('_static/fonts/cantarell-oblique-webfont.ttf') format('truetype'),
+         url('_static/fonts/cantarell-oblique-webfont.svg#cantarelloblique') format('svg');
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('_static/fonts/proximanova-light-webfont.eot');
+    src: url('_static/fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_static/fonts/proximanova-light-webfont.woff') format('woff'),
+         url('_static/fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('_static/fonts/proximanova-light-webfont.svg#proxima_nova_ltlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url('_static/fonts/proximanova-sbold-webfont.eot');
+    src: url('_static/fonts/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_static/fonts/proximanova-sbold-webfont.woff') format('woff'),
+         url('_static/fonts/proximanova-sbold-webfont.ttf') format('truetype'),
+         url('_static/fonts/proximanova-sbold-webfont.svg#proxima_nova_ltsemibold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Source Code Pro';
+    src: url('_static/fonts/sourcecodepro-regular-webfont.eot');
+    src: url('_static/fonts/sourcecodepro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('_static/fonts/sourcecodepro-regular-webfont.woff') format('woff'),
+         url('_static/fonts/sourcecodepro-regular-webfont.ttf') format('truetype'),
+         url('_static/fonts/sourcecodepro-regular-webfont.svg#source_code_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face { font-family: "Glyphicons Halflings"; font-weight: normal;
+    src: url('_static/bootstrap/fonts/glyphicons-halflings-regular.eot'); 
+    src: url('_static/bootstrap/fonts/glyphicons-halflings-regular.eot#iefix') format('embedded-opentype'), 
+    url('_static/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), 
+    url('_static/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
+    url('_static/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg'); }
+</style>
+
+<script type="text/javascript" src="_static/modernizr.2.7.1.min.js"></script>
+
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+</head>
+<body class="page">
+  <a name="top"></a>
+
+		<header id="masthead" class="site-header" role="banner">
+			<a href="http://boundlessgeo.com/" rel="home" id="logo"><img src="_static/logo.png"></a>
+		</header>
+  <section class="navi">
+    <div class="secondarynav">
+      <div class=" breadcrumbs pull-left">
+<div>
+  <a href="index.html">Boundless Android SDK</a>
+  
+     &raquo; <a href="">Data Service</a>
+</div>
+      </div>
+      <!-- Next/Prev -->
+      <ul class="right-nav list-unstyled">
+        
+          <li class="next">
+            <a href="feature-service.html" title="next chapter"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          </li>
+          <li class="previous">
+            <a href="feature-service.html" title="previous chapter"><i class="glyphicon glyphicon-chevron-left"></i></a>
+          </li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" id="page-content" data-toggle="dropdown">
+              Page Content <i class="glyphicon glyphicon-chevron-down" style="font-size: 12px;"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="page-content">
+              <ul>
+<li><a class="reference internal" href="#">Data Service</a><ul>
+<li><a class="reference internal" href="#list-all-data-objects">List all data objects</a><ul>
+<li><a class="reference internal" href="#response">Response</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#get-a-single-data-object">Get a single data object</a><ul>
+<li><a class="reference internal" href="#parameters">Parameters</a></li>
+<li><a class="reference internal" href="#id2">Response</a><ul>
+<li><a class="reference internal" href="#tileset-object-response">Tileset Object Response</a></li>
+<li><a class="reference internal" href="#errors">Errors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </ul>
+          </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- Page Content -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-sm-12">
+          <div class="content">
+              
+  <div class="section" id="data-service">
+<span id="id1"></span><h1>Data Service<a class="headerlink" href="#data-service" title="Permalink to this headline">¶</a></h1>
+<p>The data service provides information about data that the server is
+publishing. See <a href="#id3"><span class="problematic" id="id4">`Working with Data`_</span></a> for information about data
+configuration.</p>
+<div class="section" id="list-all-data-objects">
+<h2>List all data objects<a class="headerlink" href="#list-all-data-objects" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">GET</span> <span class="o">/</span><span class="n">data</span>
+</pre></div>
+</div>
+<div class="section" id="response">
+<h3>Response<a class="headerlink" href="#response" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>HTTP/1.0 200 OK
+Content-Type: application/json
+
+{
+  &quot;ne1&quot;: {
+    &quot;type&quot;: &quot;workspace&quot;,
+    &quot;driver&quot;: &quot;GeoPackage&quot;
+  },
+  &quot;states&quot;: {
+    &quot;type&quot;: &quot;dataset&quot;,
+    &quot;driver&quot;: &quot;GeoJSON&quot;
+  },
+  &quot;style&quot;: {
+    &quot;type&quot;: &quot;style&quot;,
+    &quot;driver&quot;: &quot;CartoCSS&quot;
+  },
+  &quot;va&quot;: {
+    &quot;type&quot;: &quot;workspace&quot;,
+    &quot;driver&quot;: &quot;GeoPackage&quot;
+  }
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="get-a-single-data-object">
+<h2>Get a single data object<a class="headerlink" href="#get-a-single-data-object" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre>GET /data[/{workspace}]/{name}
+</pre></div>
+</div>
+<div class="section" id="parameters">
+<h3>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>name</strong></li>
+</ul>
+<p><em>Required</em> <tt class="docutils literal"><span class="pre">string</span></tt> specifying the name of the data object.</p>
+<ul class="simple">
+<li><strong>workspace</strong></li>
+</ul>
+<p><em>Optional</em> <tt class="docutils literal"><span class="pre">string</span></tt> specifying the name of the workspace containing
+the data object.</p>
+</div>
+<div class="section" id="id2">
+<h3>Response<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><div class="highlight"><pre>HTTP/1.0 200 OK
+Content-Type: application/json
+
+{
+  &quot;name&quot;: &quot;states&quot;,
+  &quot;type&quot;: &quot;vector&quot;,
+  &quot;driver&quot;: &quot;GeoJSON&quot;,
+  &quot;bbox&quot;: [
+    -124.731422,
+    24.955967,
+    -66.969849,
+    49.371735
+  ],
+  &quot;crs&quot;: [
+    &quot;+proj=longlat&quot;,
+    &quot;+datum=WGS84&quot;,
+    &quot;+no_defs&quot;
+  ],
+  &quot;count&quot;: 49,
+  &quot;schema&quot;: {
+    &quot;STATE_NAME&quot;: &quot;String&quot;,
+    &quot;STATE_ABBR&quot;: &quot;String&quot;,
+    &quot;PERSONS&quot;: &quot;Double&quot;,
+    &quot;geometry&quot;: &quot;Polygon&quot;
+  },
+  &quot;features&quot;: &quot;/features/states.json&quot;
+}
+</pre></div>
+</div>
+<div class="section" id="tileset-object-response">
+<h4>Tileset Object Response<a class="headerlink" href="#tileset-object-response" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+  <span class="s">&quot;name&quot;</span><span class="p">:</span> <span class="s">&quot;tiles&quot;</span><span class="p">,</span>
+  <span class="s">&quot;type&quot;</span><span class="p">:</span> <span class="s">&quot;tile&quot;</span><span class="p">,</span>
+  <span class="s">&quot;driver&quot;</span><span class="p">:</span> <span class="s">&quot;GeoPackage&quot;</span><span class="p">,</span>
+  <span class="s">&quot;bbox&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">-</span><span class="mf">180.0</span><span class="p">,</span>
+    <span class="o">-</span><span class="mf">90.0</span><span class="p">,</span>
+    <span class="mf">180.0</span><span class="p">,</span>
+    <span class="mf">90.0</span>
+  <span class="p">],</span>
+  <span class="s">&quot;crs&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="s">&quot;+proj=longlat&quot;</span><span class="p">,</span>
+    <span class="s">&quot;+datum=WGS84&quot;</span><span class="p">,</span>
+    <span class="s">&quot;+no_defs&quot;</span>
+  <span class="p">],</span>
+  <span class="s">&quot;tilesize&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="mi">256</span><span class="p">,</span>
+    <span class="mi">256</span>
+  <span class="p">],</span>
+  <span class="s">&quot;grids&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="s">&quot;zoom&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="s">&quot;width&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+      <span class="s">&quot;height&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="s">&quot;res&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="mf">0.703125</span><span class="p">,</span>
+        <span class="mf">0.703125</span>
+      <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="s">&quot;zoom&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="s">&quot;width&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+      <span class="s">&quot;height&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+      <span class="s">&quot;res&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="mf">0.3515625</span><span class="p">,</span>
+        <span class="mf">0.3515625</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="s">&quot;tiles&quot;</span><span class="p">:</span> <span class="s">&quot;/tiles/ne1/tiles&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="errors">
+<h4>Errors<a class="headerlink" href="#errors" title="Permalink to this headline">¶</a></h4>
+<p>No such object with specified name exists.</p>
+<div class="highlight-python"><div class="highlight"><pre>HTTP/1.0 404 Not Found
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+              <!-- Next/Prev -->
+              <div class="selfclear pagination-nav">
+                  <div class="left"><strong>Previous</strong>: <a href="feature-service.html" title="previous chapter">Feature Service</a></div>
+                  <div class="right"><strong>Next</strong>: <a href="feature-service.html" title="next chapter">Feature Service</a></div>
+              </div>
+        </div>
+        </div>
+        <div class="col-md-3" id="sidebar">
+            
+        <div class="sidebar_section">
+          <h4 class="sidebar_header">Continue Reading</h4>
+          <p style="margin-top:1em"><b>Previous:</b> <a href="feature-service.html" title="previous chapter">Feature Service</a></p>
+          <p><b>Next:</b> <a href="feature-service.html" title="next chapter">Feature Service</a></p>
+          </ul>
+        </div>
+  <div class="about sidebar_section">
+    <h4 class="sidebar_header">About Boundless</h4>
+    <p>Boundless provides <a href="http://boundlessgeo.com/solutions/">commercial open source software</a> for internet mapping and geospatial application development. We are dedicated to the growth and support of open source software.</p>
+  </div>
+          <!--
+<ul id="relatedlinks" class="selfclear">
+  <li class="first">
+    <a href="genindex.html" title="General Index"
+       accesskey="I">index</a></li>
+  <li>
+    <a href="feature-service.html" title="Feature Service"
+       accesskey="N">next</a>|</li>
+  <li>
+    <a href="feature-service.html" title="Feature Service"
+       accesskey="P">previous</a>|</li>
+</ul> -->
+        </div>
+      </div>
+    </div>
+    <div class="toplink">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 text-center">
+          <a href="#top" class="green-icon"><i class="glyphicon glyphicon-arrow-up green-icon"></i> Top</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Page Content -->
+  <footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 text-center">
+            <a href="http://boundlessgeo.com/">&copy; Copyright 2014, Boundless</a>
+	      </div>
+			</div>
+		</div>
+  </footer>
+
+  <a name="bottom"></a>
+
+  <script type="text/javascript" src="_static/jquery.1.10.2.min.js"></script>
+  <script type="text/javascript" src="_static/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
