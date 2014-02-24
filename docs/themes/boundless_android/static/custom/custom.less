@@ -34,6 +34,8 @@
 
 @footer: #1f3c49;
 
+@androidgreen: #80a912; // darker for text
+
 /*****************
   Type Variables
 ******************/
@@ -64,9 +66,9 @@
 @gray-light:             lighten(#000000, 60%);   // #999
 @gray-lighter:           lighten(#000000, 93.5%); // #eee
 
-@brand-primary:         @seafoamgreen;
+@brand-primary:         @androidgreen;
 @brand-success:         @nectarine;
-@brand-info:            @cactus;
+@brand-info:            @midnightBlue;
 @brand-warning:         @lemonzest;
 @brand-danger:          @burntorange;
 
@@ -918,7 +920,7 @@ ul, ol {
 }
 ul, ul li, ol, ol li {
   text-indent: 0;
-  margin-left: 1.5em;
+  margin-left: 1em;
   padding: 0 0 0.4em 0;
 }
 .container {
@@ -954,7 +956,19 @@ th, td {
   border: 0;
 }
 #masthead {
-  padding: 20px 0 20px 35px
+  display: inline-block;
+  width: 100%;
+  padding-top: 10px;
+
+  #logo {
+    float: left;
+    padding: 12px 0 0 35px;
+  }
+  #android{
+    float: right;
+    margin-right: 45px;
+    margin-bottom: -10px;
+  }
 }
 
 
@@ -962,7 +976,7 @@ th, td {
 /*------------------------------------------------------------------*/
 
 .secondarynav {
-  background: #00a78d;
+  background: @limegreen;
   height: 58px;
   font-size: 16px;
   width: 100%;
@@ -977,18 +991,22 @@ th, td {
 .secondarynav .breadcrumbs a {
   color: #FFFFFF;
   padding: 0 0.5%;
+  //text-shadow: black 0.1em 0.1em 0.1em;
+  text-shadow: 0.1em .1em 0.1em #aaa;
 }
 .secondarynav ul.right-nav li.dropdown .dropdown-toggle {
   color: #FFFFFF;
   padding-top: 18px;
 }
 .secondarynav ul.right-nav li.dropdown .dropdown-menu {
-  top: 57px;
-  padding-bottom: 15px;
-  padding-top: 0;
+  top: 38px;
+  left: -5em;
+  padding: 0 1.5em 1em 0;
+  list-style: none;
 }
 .secondarynav ul.right-nav li.dropdown .dropdown-menu ul {
   padding: 0;
+  list-style: inherit;
 }
 .secondarynav ul.right-nav li.dropdown .dropdown-menu ul li {
   min-width: 200px;
@@ -1008,7 +1026,7 @@ th, td {
   text-overflow: ellipsis;
 }
 .secondarynav ul.right-nav li.dropdown .dropdown-menu ul li a:hover {
-  color: #00a78d;
+  color: @androidgreen;
 }
 .secondarynav ul.right-nav li.dropdown .dropdown-menu ul li a ul li {
   margin-bottom: 2px;
@@ -1052,6 +1070,9 @@ th, td {
   .secondarynav ul.right-nav li.previous, li.next {
     display: none;
   }
+  #android {
+    display: none;
+  }
 }
 /* Make sure smaller widths go before larger widths! */
 
@@ -1093,7 +1114,7 @@ th, td {
   margin-top: 30px;
 }
 .sidebar_header {
-  color: #00a78d;
+  color: @androidgreen;
 }
 .sidebar_section ul {
   list-style: none;
@@ -1142,7 +1163,7 @@ code, pre, .pre {
   font-family: "proxima-nova", helvetica, arial;
   font-size: 1.5em;
   font-weight: bold;
-  color: #00a78d;
+  color: @androidgreen;
   padding-left: 10px;
 }
 .admonition p, ol {
@@ -1236,7 +1257,7 @@ blockquote p, .admonition-instructor-notes {
 }
 
 .green-icon {
-  color: #00a78d;
+  color: @androidgreen;
 }
 
 .first {
