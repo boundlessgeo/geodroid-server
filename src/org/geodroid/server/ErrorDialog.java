@@ -10,11 +10,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class ErrorDialog {
 
-    public static void show(final Exception e, final Context context) {
+    public static void show(final Throwable e, final Context context) {
         AlertDialog.Builder db = new AlertDialog.Builder(context);
         db.setIcon(R.drawable.ic_dialog_alert_holo_dark);
         db.setTitle(R.string.oops);
@@ -39,7 +40,7 @@ public class ErrorDialog {
         db.create().show();
     }
 
-    static String toString(Exception e) {
+    static String toString(Throwable e) {
         ByteArrayOutputStream bout = new ByteArrayOutputStream();
         e.printStackTrace(new PrintStream(bout));
         return new String(bout.toByteArray());

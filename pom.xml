@@ -31,6 +31,11 @@
       <version>${geodroid.version}</version>
     </dependency>
     <dependency>
+      <groupId>org.ocpsoft.prettytime</groupId>
+      <artifactId>prettytime</artifactId>
+      <version>1.0.8.Final</version>
+    </dependency>
+    <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>android</artifactId>
       <version>4.1.1.4</version>
@@ -69,7 +74,7 @@
         <configuration>
           <outputDirectory>${basedir}/libs</outputDirectory>
           <excludeScope>provided</excludeScope>
-          <includeArtifactIds>jeo-nano</includeArtifactIds>
+          <includeArtifactIds>jeo-nano,prettytime</includeArtifactIds>
         </configuration>
         <executions>
           <execution>

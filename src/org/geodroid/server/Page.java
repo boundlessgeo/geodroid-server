@@ -10,6 +10,7 @@ public enum Page {
     APPS(AppsPage.class, R.string.apps), 
     LOGS(LogsPage.class, R.string.logs),
     SETTINGS(SettingsPage.class, R.string.settings),
+    GEOGIT(GeoGitPage.class, R.string.geogit)
     ;
     final Class<? extends Fragment> fragment;
     final int title;
