@@ -1,0 +1,134 @@
+html, body {
+margin: 0;
+padding: 0;
+height: 100%;
+font-family: Arial;
+}
+
+#map {
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+.olControlAttribution {
+font-size: 10px;
+bottom: 5px;
+right: 5px;
+}
+
+.olButton {
+border: 1px solid #999;
+border-radius: 2px;
+background-repeat: no-repeat;
+background-position: 50% 50% !important;
+background-color: #bbb;
+}
+
+.olButton:hover {
+background-color: #eee;
+}
+
+.olControlEditingToolbar div[class*="ItemActive"] {
+background-color: #eee;
+}
+
+.olControlEditingToolbar div[class*="app-control-add"] {
+background-image: url('img/bullet_orange_add.png');
+}
+.olControlEditingToolbar div[class*="app-control-del"] {
+background-image: url('img/bullet_orange_delete.png');
+}
+.olControlEditingToolbar div[class*="app-control-edit"] {
+background-image: url('img/pencil.png');
+}
+.olControlEditingToolbar div[class*="app-control-pan"] {
+background-image: url('img/pan.png');
+}
+
+.olControlEditingToolbar div[class*="app-control-hide"] {
+display: none;
+}
+
+.olControlEditingToolbar .appControlSelectItemInactive {
+background-image: url(ol/img/select_tool.png);
+background-position: -1px -1px;
+}
+.olControlEditingToolbar .appControlSelectItemActive {
+background-image: url(ol/img/select_tool.png);
+background-position: -1px -24px;
+}
+
+.olControlEditingToolbar {
+  /*right: 25px;*/
+}
+.olControlLayerSwitcher{
+top: 0px;
+}
+
+#edit {
+position: fixed;
+top: 40px;
+right: 5px;
+}
+
+#edit > input[type='text'] {
+width: 155px;
+display: block;
+}
+
+#edit > input[type='button'] {
+float: right;
+}
+
+#commit {
+position: fixed;
+top: 80px;
+right: 5px;
+}
+
+#save {
+display: block;
+float: right;
+padding: 6px 12px 6px 20px;
+background: url('img/bullet_go.png') no-repeat 5px 50%;
+background-color: #eee;
+border-radius: 2px;
+cursor: pointer;
+}
+
+#save:hover {
+background-color: #aaa;
+}
+
+#status {
+display:inline;
+line-height: 35px;
+vertical-align: middle;
+}
+
+#status.info {
+background: url('img/information.png') no-repeat left center;
+padding-left: 20px;
+}
+
+#commit textarea, #commit input[type='text'] {
+display: block;
+width: 155px;
+}
+
+input[type='text'], textarea {
+  padding: 3px 6px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;*/
+} 

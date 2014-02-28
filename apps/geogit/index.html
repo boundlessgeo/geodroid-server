@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GeoGit Editing Test App</title>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="ol/theme/default/style.mobile.css" type="text/css">
+        <link rel="stylesheet" href="ol/theme/default/style.css" type="text/css">
+        <link rel="stylesheet" href="app.css" type="text/css">
+
+        <script src="jquery.min.js"></script>
+        <script src="ol/OpenLayers.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>        
+        <div id="map"></div>
+        <div id="edit">
+            <input id="name" type="text" placeholder="Name"></input>
+        </div>
+        <div id="commit">
+            <textarea id="message" rows="4" placeholder="Commit message"></textarea>
+            <input id="author" type="text" placeholder="Author"></input>
+            <a id="save" title="Push changes to server">Save</a>
+            <div id="status"></div>
+        </div>
+          
+        <script>
+            init();
+        </script>
+    </body>
+</html>
