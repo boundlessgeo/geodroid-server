@@ -60,6 +60,7 @@ App.prototype.createProtocol = function() {
 
     var superCreate = OpenLayers.Protocol.HTTP.prototype.create;
     var superUpdate = OpenLayers.Protocol.HTTP.prototype.update;
+    var superDelete = OpenLayers.Protocol.HTTP.prototype.delete;
 
     OpenLayers.Protocol.HTTP.prototype.create = function(features, options) {
         options.url = this.options.url + "?" + self.encodeCommitOptions();
@@ -69,6 +70,11 @@ App.prototype.createProtocol = function() {
         options.url = this.options.url + "/" + feature.fid + "?" + 
             self.encodeCommitOptions();
         superUpdate.apply(http, [feature, options]);
+    }
+    OpenLayers.Protocol.HTTP.prototype.delete = function(feature, options) {
+        options.url = this.options.url + "/" + feature.fid + "?" + 
+            self.encodeCommitOptions();
+        superDelete.apply(http, [feature, options]);
     }
     return http;
 }
