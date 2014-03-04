@@ -1,4 +1,4 @@
-.. _tile-service:
+.. _boundless_android.tile-service:
 
 ============
 Tile Service

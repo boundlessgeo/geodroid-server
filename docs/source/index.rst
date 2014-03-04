@@ -10,7 +10,9 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   overview
    installation
+   adding-data
    boundless-android-server
    working-with-data
    service-reference

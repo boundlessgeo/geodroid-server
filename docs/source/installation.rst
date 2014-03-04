@@ -4,7 +4,7 @@
 Installation
 ============
 
-**Components:**
+**Components**
 
 `1. Boundless Android SDK`_
   Android library for building spatial applications.
@@ -31,12 +31,14 @@ After installing the SDK some additional packages must be installed through
 the Android SDK Manager. Run the ``android`` command to start the SDK manager
 and install the following packages:
 
+.. cssclass:: styled
+
 * Android SDK Tools
 * Android SDK SDK Platform-tools
 * Android SDK Build-tools
 
 And finally install the appropriate API package. Currently Boundless Android SDK is built
-against "Android 4.0.3 (API 15)".
+against "Android 4.0.3 (API 15)". These tools have also been tested on recent versions of the Android platform including Ice Cream Sandwich (4.0) through KitKat (4.4).
 
 Download
 ^^^^^^^^^
@@ -148,13 +150,14 @@ Download
 Preparation
 ^^^^^^^^^^^^
 
-Boundless Android Viewer needs `geodroid-server`_ installed and running on the
+Boundless Android Viewer needs `Boundless Android Server`_ installed and running on the
 Android device.
 
 To make use of Boundless Android Server, it is recommended to install a
 GeoPackage on the device's SD-card. This can be done by unpacking the
 contents of the http://dev.opengeo.org/~jdeolive/ne.zip GeoPackage to
 ``/sdcard/GeoData/`` on the Android device.
+
 
 Installation
 ^^^^^^^^^^^^
@@ -209,6 +212,7 @@ zoom
     .. code-block:: console
 
         zoom=<zoomlevel>
+
 
 
 .. _Android SDK: http://developer.android.com/sdk/index.html

@@ -1,4 +1,4 @@
-.. _working-with-data:
+.. _boundless_android.working-with-data:
 
 ========================
 Working with Data
@@ -14,6 +14,8 @@ Supported Formats
 -  `MBTiles`_
 -  `GeoPackage`_
 -  `CSV`_
+-  `Shapefile`_
+-  `GeoGit`_
 
 Data Directory
 --------------
@@ -106,7 +108,7 @@ The above specifies the following data objects:
 Data Endpoint
 -------------
 
-The `data service`_ can be used to validate the server data
+The :doc:`data-service` can be used to validate the server data
 configuration. With the server running visit the url
 ``http://localhost:8000/data``.
 
@@ -125,9 +127,10 @@ time of the writing of this document the GeoPackage spec is not yet
 finalized.
 
 
-.. _data service: Service-Reference#data-service
 .. _GeoJSON: http://geojson.org
 .. _MBTiles: https://www.mapbox.com/developers/mbtiles/
 .. _GeoPackage: https://github.com/opengis/geopackage
 .. _CSV: http://en.wikipedia.org/wiki/Comma-separated_values
+.. _Shapefile: http://en.wikipedia.org/wiki/Shapefile
+.. _GeoGit: http://geogit.org
 

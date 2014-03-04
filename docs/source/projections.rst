@@ -1,4 +1,4 @@
-.. _projections:
+.. _boundless_android.projections:
 
 ========================
 Projections

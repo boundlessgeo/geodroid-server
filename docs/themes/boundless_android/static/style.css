@@ -269,7 +269,7 @@ body {
   font-size: 16px;
   line-height: 1.71428571;
   color: #333333;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 input,
 button,
@@ -314,7 +314,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.71428571;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1430,7 +1430,7 @@ th {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -3500,7 +3500,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555555;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3546,7 +3546,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #f2f2f2;
+    border-bottom-color: #ffffff;
   }
 }
 .nav-pills > li {
@@ -3614,7 +3614,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #f2f2f2;
+    border-bottom-color: #ffffff;
   }
 }
 .tab-content > .tab-pane {
@@ -4393,7 +4393,7 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 27px;
   line-height: 1.71428571;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -5824,6 +5824,10 @@ ol li {
   padding: 0 0 0.4em 0;
   list-style: none;
 }
+ul.styled,
+ul.styled li {
+  list-style: circle;
+}
 .container {
   width: auto;
 }
@@ -6163,6 +6167,7 @@ dl.docutils {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5px;
 }
 dl.docutils dt {
   margin-top: 1em;
@@ -6170,7 +6175,6 @@ dl.docutils dt {
 .literal {
   color: #226279;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 ul.simple li img {
   display: inline-block;

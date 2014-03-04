@@ -78,7 +78,7 @@
 // ## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               @lightslate;
+@body-bg:               white;
 //** Global text color on `<body>`.
 @text-color:            @gray-dark;
 
@@ -924,6 +924,10 @@ ul, ul li, ol, ol li {
   padding: 0 0 0.4em 0;
   list-style: none;
 }
+ul.styled, ul.styled li {
+  list-style: circle;
+}
+
 .container {
   width: auto;
 }
@@ -1295,6 +1299,7 @@ dl.docutils {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5px;
 }
 
 dl.docutils dt {
@@ -1304,7 +1309,6 @@ dl.docutils dt {
 .literal {
   color: #226279;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
 ul.simple li img {

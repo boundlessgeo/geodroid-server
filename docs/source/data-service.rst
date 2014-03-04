@@ -1,11 +1,11 @@
-.. _data-service:
+.. _boundless_android.data-service:
 
 ============
 Data Service
 ============
 
 The data service provides information about data that the server is
-publishing. See `Working with Data`_ for information about data
+publishing. See :doc:`working-with-data` for information about data
 configuration.
 
 List all data objects
@@ -149,6 +149,4 @@ No such object with specified name exists.
 ::
 
     HTTP/1.0 404 Not Found
-
-
 

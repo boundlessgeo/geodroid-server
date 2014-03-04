@@ -1,4 +1,4 @@
-.. _data-service:
+.. _boundless_android.feature-service:
 
 ===============
 Feature Service

@@ -1,4 +1,4 @@
-.. __boundless_android.service-reference:
+.. _boundless_android.service-reference:
 
 ==================
 Service Reference
@@ -42,12 +42,4 @@ status code, should note the nature of the problem). The HTTP services provided 
 
 
 The various HTTP services provided by Boundless Android Server are outlined further in the next sections.
-
-.. toctree::
-   :maxdepth: 2
-
-   data-service
-   tile-service
-   feature-service
-
 
