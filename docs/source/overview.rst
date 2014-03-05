@@ -4,7 +4,9 @@
 Overview
 ============
 
-The Boundless Android SDK is made up of two primary components. The first is the low level SDK itself. The second is the mobile server built on top of the SDK. Lastly, an HTML and JavaScript viewer runnable in any modern web browser is also included.
+The Boundless Android SDK is made up of two primary components. The first is the low level SDK itself. The second is the mobile server built on top of the SDK.
+
+Lastly, a viewer in HTML and JavaScript runnable in any modern web browser is also included.
 
 SDK
 ============

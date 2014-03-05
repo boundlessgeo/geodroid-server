@@ -12,13 +12,18 @@ Contents:
 
    overview
    installation
-   adding-data
+   sample-data
    boundless-android-server
    working-with-data
+   view-data
+   view-shapefile
+   view-geopackage
+   view-geogit
    service-reference
    data-service
    feature-service
    tile-service
    projections
+   appendix
 
 

@@ -4,8 +4,7 @@
 Working with Data
 ========================
 
-This page describes how to configure Geodroid server to serve spatial
-data.
+This section gives an overview of how to configure Boundless Android Server to serve spatial data.
 
 Supported Formats
 -----------------
@@ -51,8 +50,8 @@ The index file consists of a single JSON object whose keys whose keys
 are names of the data objects. Each key maps to an object that contains
 the following properties.
 
--  driver - the name or alias identifying the driver for the data
--  keys - object containing the key / values pairs defining the data
+-  **driver** - the name or alias identifying the driver for the data
+-  **keys** - object containing the key / values pairs defining the data
    connection options
 
 The following is an example consisting of a single GeoJSON dataset in a

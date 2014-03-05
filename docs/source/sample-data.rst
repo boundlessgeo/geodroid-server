@@ -1,19 +1,19 @@
 .. _boundless_android.adding-data:
 
 ========================
-Adding Data
+Sample Data
 ========================
 
 This page describes how to install some additional reference data sets for trying out the Boundless Android SDK.
 
 Download and unpack the contents of the following to ``/sdcard/GeoData/`` directory on the Android device.
 
-* **GeoPackage**
-     http://dev.opengeo.org/~jdeolive/ne.zip  (previously installed)
-* **Shapefile**
-     http://dev.opengeo.org/~jdeolive/medford.zip
-* **GeoGit**
-     http://dev.opengeo.org/~jdeolive/world.zip
+**GeoPackage**
+     http://data.boundlessgeo.com/mobile/ne.zip  (if not already installed)
+**Shapefile**
+     http://data.boundlessgeo.com/mobile/medford_parks.zip
+**GeoGit**
+     http://data.boundlessgeo.com/mobile/world.zip
 
 Natural Earth
 -----------------
@@ -54,7 +54,6 @@ World Cities
 The World Cities data contains a GeoGit repository containing North American cities. The dataset is derived from `Wikipedia's list`_ of the 20 most populous cities in North America.
 
 The ``world.zip`` file contains a directory named ``world`` and a file named ``world.jeo`` located parallel to the directory. Both files are required for the mobile server to recognize the repository.
-
 
 
 .. _Natural Earth: http://www.naturalearthdata.com
