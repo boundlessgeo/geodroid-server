@@ -1,10 +1,43 @@
 
+/* For index.html page */
+
+.spacer {
+  margin-top: 48%;
+}
+.bottom_spacer {
+  margin-top: 5%;
+}
+
+.secondarynav ul.right-nav {
+  float: right;
+  padding-right: 2%;
+}
+
+li.next {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.get_started {
+  font-family: 'Open Sans',HelveticaArial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+.get_started:hover {
+  text-decoration: none;
+}
+.get_started .glyphicon {
+  padding-left: 25px;
+}
+
 .device {
   position: absolute;
   display: block;
   left: 10%;
   height: auto;
   width: 80%;
+  top: 50px;
 }
 
 .fadeText {
@@ -14,55 +47,60 @@
   background-color: #fff;
   line-height: 40px;
   color: #666;
-}
-
-#all {
-  top: -55px;
-  z-index: 11;
-  animation-duration: 9s;
-  animation-delay: 25s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 9s;
-  -webkit-animation-delay: 25s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  top: 63px;
 }
 
 #end_text{
   z-index: 28;
   margin-top: -54px;
   animation-duration: 3s;
-  animation-delay: 33s;
+  animation-delay: 36s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 33s;
+  -webkit-animation-delay: 36s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
 }
 
-#features {
-  z-index: 9;
-  animation-duration: 10s;
-  animation-delay: 23s;
+#all {
+  margin-top: -5.6%;
+  z-index: 30;
+  animation-duration: 9s;
+  animation-delay: 22s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  -webkit-animation-duration: 10s;
-  -webkit-animation-delay: 23s;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 22s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
 }
 
-#all_text{
+#ol_text{
   z-index: 22;
   margin-top: -54px;
   animation-duration: 3s;
-  animation-delay: 29s;
+  animation-delay: 31s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 29s;
+  -webkit-animation-delay: 31s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#feature_text {
+  z-index: 20;
+  margin-top: -54px;
+  animation-duration: 4s;
+  animation-delay: 25s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 25s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
 }
@@ -79,15 +117,15 @@
   -webkit-animation-timing-function: ease-in;
 }
 
-#land_text{
-  z-index: 20;
+#water_text{
+  z-index: 18;
   margin-top: -54px;
-  animation-duration: 3s;
-  animation-delay: 24s;
+  animation-duration: 2s;
+  animation-delay: 18s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 24s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 18s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
 }
@@ -100,19 +138,6 @@
   animation-timing-function: ease-in;
   -webkit-animation-duration: 6s;
   -webkit-animation-delay: 17s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-}
-
-#water_text{
-  z-index: 18;
-  margin-top: -54px;
-  animation-duration: 3s;
-  animation-delay: 18s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 18s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
 }
@@ -141,28 +166,28 @@
   -webkit-animation-timing-function: ease-in;
 }
 
-#formats_text{
+#projections_text {
   z-index: 16;
   margin-top: -54px;
   animation-duration: 2s;
-  animation-delay: 13s;
+  animation-delay: 14s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 13s;
+  -webkit-animation-delay: 14s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
 }
 
-#projections_text {
+#formats_text{
   z-index: 15;
   margin-top: -54px;
   animation-duration: 2s;
-  animation-delay: 10s;
+  animation-delay: 11s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 10s;
+  -webkit-animation-delay: 11s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
 }
@@ -183,11 +208,11 @@
   z-index: 14;
   margin-top: -54px;
   animation-duration: 2s;
-  animation-delay: 7s;
+  animation-delay: 8s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 7s;
+  -webkit-animation-delay: 8s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
 }
@@ -208,11 +233,11 @@
   z-index: 12;
   margin-top: -54px;
   animation-duration: 2s;
-  animation-delay: 2s;
+  animation-delay: 5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 2s;
+  -webkit-animation-delay: 5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
 }
@@ -222,6 +247,7 @@
 }
 #logo_text {
   z-index: 0;
+  top: 10px;
   animation-duration: 2s;
   animation-delay: 2s;
   animation-iteration-count: 1;
