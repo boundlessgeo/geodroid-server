@@ -1,0 +1,234 @@
+
+.device {
+  position: absolute;
+  display: block;
+  left: 10%;
+  height: auto;
+  width: 80%;
+}
+
+.fadeText {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #fff;
+  line-height: 40px;
+  color: #666;
+}
+
+#all {
+  top: -55px;
+  z-index: 11;
+  animation-duration: 9s;
+  animation-delay: 25s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 9s;
+  -webkit-animation-delay: 25s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#end_text{
+  z-index: 28;
+  margin-top: -54px;
+  animation-duration: 3s;
+  animation-delay: 33s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 33s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#features {
+  z-index: 9;
+  animation-duration: 10s;
+  animation-delay: 23s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-delay: 23s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#all_text{
+  z-index: 22;
+  margin-top: -54px;
+  animation-duration: 3s;
+  animation-delay: 29s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 29s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#land {
+  z-index: 7;
+  animation-duration: 3s;
+  animation-delay: 19s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 19s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#land_text{
+  z-index: 20;
+  margin-top: -54px;
+  animation-duration: 3s;
+  animation-delay: 24s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 24s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#water {
+  z-index: 6;
+  animation-duration: 6s;
+  animation-delay: 17s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-delay: 17s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#water_text{
+  z-index: 18;
+  margin-top: -54px;
+  animation-duration: 3s;
+  animation-delay: 18s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 18s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#formats {
+  z-index: 5;
+  animation-duration: 3s;
+  animation-delay: 14s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 14s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+} /* ends at 39s */
+
+#formats_all {
+  z-index: 4;
+  animation-duration: 3s;
+  animation-delay: 10s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 10s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#formats_text{
+  z-index: 16;
+  margin-top: -54px;
+  animation-duration: 2s;
+  animation-delay: 13s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 13s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#projections_text {
+  z-index: 15;
+  margin-top: -54px;
+  animation-duration: 2s;
+  animation-delay: 10s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 10s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#lowlevel {
+  z-index: 3;
+  animation-duration: 3s;
+  animation-delay: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 6s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#lowlevel_text{
+  z-index: 14;
+  margin-top: -54px;
+  animation-duration: 2s;
+  animation-delay: 7s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 7s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#android {
+  z-index: 2;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#android_text {
+  z-index: 12;
+  margin-top: -54px;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+
+#logo {
+  z-index: 1;
+}
+#logo_text {
+  z-index: 0;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+}
+

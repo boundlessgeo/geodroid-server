@@ -18,8 +18,12 @@ Install
      cd docs/
 
      make html
+     
+     cp source/index.html build/html/  
 
 View output in build/html/
+
+A custom index.html was made for this project so the sphinx toc root is actually source/toc.rst.
 
 
 Build Details

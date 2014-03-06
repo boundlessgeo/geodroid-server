@@ -1,9 +1,7 @@
 .. _boundless_android:
 
-Boundless Android Toolkit
+Table of Contents
 ===========================
-
-.. todo:: Add some description and an overview architecture diagram.
 
 Contents:
 
