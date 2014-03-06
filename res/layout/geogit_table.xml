@@ -3,21 +3,14 @@
    android:id="@+id/geogit.table"
    android:layout_width="fill_parent"
    android:layout_height="wrap_content"
-   android:stretchColumns="0,1">
-   
+   android:stretchColumns="0">
    <TableRow
        style="@style/TableHead">
        <TextView 
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_gravity="left"
-           android:text="@string/name"
-           style="@style/TextMedium"/>
-       <TextView 
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_gravity="center_horizontal"
-           android:text="@string/origin"
+           android:text="@string/repo"
            style="@style/TextMedium"/>
        <TextView 
            android:layout_width="wrap_content"
@@ -28,6 +21,6 @@
    </TableRow>
    <TableRow 
        style="@style/TableDivider">
-        <TextView android:layout_span="3" style="@style/TableDividerInner"/>
+        <TextView android:layout_span="2" style="@style/TableDividerInner"/>
    </TableRow> 
 </TableLayout>

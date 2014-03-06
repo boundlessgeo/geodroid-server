@@ -10,40 +10,21 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        style="@style/TextMedium"/>
+       <TextView android:id="@+id/geogit.table.origin"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         style="@style/TextSmall"/>
         <TextView android:id="@+id/geogit.table.lastmod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/TextSmall"/>
      </LinearLayout>
-    
-    <TextView android:id="@+id/geogit.table.origin"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:layout_gravity="center"
-         style="@style/TextMedium"/>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
-
-        <!--LinearLayout android:id="@+id/geogit.sync_progress"
-           android:orientation="horizontal"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content">
-	
-	      <ProgressBar
-	         android:layout_width="wrap_content"
-	         android:layout_height="wrap_content"
-	         style="@android:style/Widget.ProgressBar.Small"/>
-	
-	      <TextView
-	         android:layout_width="wrap_content"
-	         android:layout_height="wrap_content"
-	         android:layout_marginLeft="@dimen/Space"
-	         android:text="@string/synching"/>
-	    </LinearLayout-->
 
         <ProgressBar
               android:id="@+id/geogit.sync_progress"
