@@ -2,11 +2,8 @@
 {%- set reldelim = reldelim is not defined and '|' or reldelim %}
 {%- macro breadcrumbs() %}
 <div>
-  {%- if coursename %}
-    <a href="{{ pathto('../toc.html', 1) }}" title="Table of Contents">{{ coursename|striptags }}</a> {{ breadcrumbdelim }}&nbsp;
-  {%- endif %}
   {%- block rootrellink %}
-  <a href="{{ pathto('index') }}">{{ project }}</a>
+  <a href="{{ pathto('toc') }}">{{ project }}</a>
   {%- endblock %}
   {%- for parent in parents %}
     {{ breadcrumbdelim }} <a href="{{ parent.link|e }}" accesskey="U">{{ parent.title }}</a>
