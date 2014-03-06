@@ -3,7 +3,7 @@
 {%- macro breadcrumbs() %}
 <div>
   {%- if coursename %}
-    <a href="{{ pathto('../index.html', 1) }}" title="Course Home">{{ coursename|striptags }}</a> {{ breadcrumbdelim }}&nbsp;
+    <a href="{{ pathto('../toc.html', 1) }}" title="Table of Contents">{{ coursename|striptags }}</a> {{ breadcrumbdelim }}&nbsp;
   {%- endif %}
   {%- block rootrellink %}
   <a href="{{ pathto('index') }}">{{ project }}</a>
@@ -59,7 +59,7 @@
 {%- block doctype -%}
 <!DOCTYPE html>
 {%- endblock %}
-<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js">
 <head>
   <meta charset="UTF-8">
   {{ metatags }}
