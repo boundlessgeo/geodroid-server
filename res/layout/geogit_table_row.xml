@@ -20,25 +20,36 @@
             style="@style/TextSmall"/>
      </LinearLayout>
 
-    <LinearLayout
-        android:orientation="horizontal"
+     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center">
 
-        <ProgressBar
-              android:id="@+id/geogit.sync_progress"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_marginTop="5dp"
-             android:layout_marginBottom="5dp"
-             style="@android:style/Widget.ProgressBar.Small"/>
-             
-	    <ImageView android:id="@+id/geogit.table.sync"
-	         android:layout_width="wrap_content"
-	         android:layout_height="wrap_content"
-	         android:src="@drawable/ic_refresh"
-	         android:layout_gravity="center" 
-	         android:contentDescription="@string/sync"/>
+	    <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center">
+	        <ProgressBar
+	              android:id="@+id/geogit.sync_progress"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_marginTop="5dp"
+	             android:layout_marginBottom="5dp"
+	             style="@android:style/Widget.ProgressBar.Small"/>
+
+		    <ImageView android:id="@+id/geogit.table.sync"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:src="@drawable/ic_refresh"
+		         android:layout_gravity="center" 
+		         android:contentDescription="@string/sync"/>
+	     </LinearLayout>
+
+	     <TextView android:id="@+id/geogit.table.sync_msg"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            style="@style/TextSmall"/>
      </LinearLayout>
 </TableRow>

@@ -107,6 +107,9 @@ public class GeoGitPage extends PageFragment {
             }
         });
 
+        final TextView syncStatus = (TextView) row.findViewById(R.id.geogit_table_sync_msg);
+        syncStatus.setVisibility(View.INVISIBLE);
+
         final View syncProgress = row.findViewById(R.id.geogit_sync_progress);
         syncProgress.setVisibility(View.GONE);
 
@@ -118,7 +121,7 @@ public class GeoGitPage extends PageFragment {
             public void onClick(View v) {
                 Remote origin = findOrigin(gg);
                 if (origin != null) {
-                    new SyncRepo(syncImg, syncProgress).execute(gg, origin);
+                    new SyncRepo(syncImg, syncProgress, syncStatus).execute(gg, origin);
                 }
             }
         });
@@ -225,16 +228,19 @@ public class GeoGitPage extends PageFragment {
 
         View syncImg;
         View syncProgress;
+        TextView syncStatus;
 
-        SyncRepo(View syncImg, View syncProgress) {
+        SyncRepo(View syncImg, View syncProgress, TextView syncStatus) {
             this.syncImg = syncImg;
             this.syncProgress = syncProgress;
+            this.syncStatus = syncStatus;
         }
 
         @Override
         protected void onPreExecute() {
             syncImg.setVisibility(View.GONE);
             syncProgress.setVisibility(View.VISIBLE);
+            syncStatus.setVisibility(View.INVISIBLE);
         }
 
         @Override
@@ -243,7 +249,12 @@ public class GeoGitPage extends PageFragment {
             syncProgress.setVisibility(View.GONE);
             if (result != null) {
                 ErrorDialog.show(result, getActivity());
+                syncStatus.setText(R.string.sync_failed);
             }
+            else {
+                syncStatus.setText(R.string.sync_success);
+            }
+            syncStatus.setVisibility(View.VISIBLE);
         }
 
         @Override

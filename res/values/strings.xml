@@ -54,6 +54,8 @@
     <string name="repos">Repositories</string>
     <string name="repo">Repository</string>
     <string name="synching">Synchronizing</string>
+    <string name="sync_success">Success</string>
+    <string name="sync_failed">Sync failed</string>
 
     <string name="vector">Collection</string>
     <string name="tile">Tile</string>
