@@ -1,8 +1,7 @@
-
 /* For custom site page index.html (not sphinx) */
 
 .spacer {
-  margin-top: 48%;
+  margin-top: 50%;
 }
 .bottom_spacer {
   margin-top: 9%;
@@ -41,6 +40,7 @@ li.next {
   -webkit-transform: translate3d(0, 0, 0); /*force hw accel*/
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
+  opacity: 0; /* will change */
 }
 
 .fadeText {
@@ -53,240 +53,148 @@ li.next {
   position: absolute;
   left: 10%;
   width: 80%;
-  top: 63px;
+  top: 9px;
+  height: 80px;
   -webkit-transform: translate3d(0, 0, 0); /*force hw accel*/
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
+  opacity: 0; /* will change */
+}
+
+@keyframes logofadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+@-webkit-keyframes logofadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes logofadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@-webkit-keyframes logofadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 #end_text{
-  z-index: 34;
-  margin-top: -54px;
-  animation-duration: 3s;
-  animation-delay: 34s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 34s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 17;
+  animation: logofadeIn 2s ease-in 27s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 27s 1 forwards;
 }
 
 #wifi {
-  z-index: 36;
+  z-index: 18;
   margin-top: -6%;
-  animation-duration: 3s;
-  animation-delay: 29s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 29s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  animation: logofadeIn 2s ease-in 27s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 27s 1 forwards;
 }
 
 #all {
-  z-index: 31;
-  animation-duration: 3s;
-  animation-delay: 29s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 29s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 16;
+  animation: logofadeIn 2s ease-in 25s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 25s 1 forwards;
 }
 
 #ol_text{
-  z-index: 33;
-  margin-top: -54px;
-  animation-duration: 3s;
-  animation-delay: 29s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 29s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 15;
+  animation: logofadeIn 2s ease-in 23s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 23s 1 forwards;
 }
 
 #feature_text {
-  z-index: 20;
-  margin-top: -54px;
-  animation-duration: 3s;
-  animation-delay: 24s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 24s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 14;
+  animation: logofadeIn 2s ease-in 20s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 20s 1 forwards;
 }
 
 #features {
-  z-index: 30;
-  animation-duration: 3s;
-  animation-delay: 22s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 22s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 13;
+  animation: logofadeIn 2s ease-in 20s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 20s 1 forwards;
 }
 
 
 #land {
-  z-index: 7;
-  animation-duration: 3s;
-  animation-delay: 19s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 19s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 12;
+  animation: logofadeIn 2s ease-in 17s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 17s 1 forwards;
 }
 
 #water_text{
-  z-index: 18;
-  margin-top: -54px;
-  animation-duration: 2s;
-  animation-delay: 18s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 18s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 11;
+  animation: logofadeIn 2s ease-in 17s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 17s 1 forwards;
 }
 
 #water {
-  z-index: 6;
-  animation-duration: 6s;
-  animation-delay: 17s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 6s;
-  -webkit-animation-delay: 17s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 10;
+  animation: logofadeIn 2s ease-in 14s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 14s 1 forwards;
 }
 
-#formats {
-  z-index: 5;
-  animation-duration: 3s;
-  animation-delay: 14s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 14s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-} /* ends at 39s */
-
 #formats_all {
-  z-index: 4;
-  animation-duration: 3s;
-  animation-delay: 10s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 10s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 9;
+  animation: logofadeIn 2s ease-in 11s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 11s 1 forwards;
 }
 
 #projections_text {
-  z-index: 16;
-  margin-top: -54px;
-  animation-duration: 2s;
-  animation-delay: 14s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 14s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 8;
+  animation: logofadeIn 2s ease-in 11s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 11s 1 forwards;
 }
 
+#formats {
+  z-index: 7;
+  animation: logofadeIn 2s ease-in 8s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 8s 1 forwards;
+}
+
+
 #formats_text{
-  z-index: 15;
-  margin-top: -54px;
-  animation-duration: 2s;
-  animation-delay: 11s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 11s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 6;
+  animation: logofadeIn 2s ease-in 8s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 8s 1 forwards;
 }
 
 #lowlevel {
-  z-index: 3;
-  animation-duration: 3s;
-  animation-delay: 6s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 6s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 5;
+  animation: logofadeIn 2s ease-in 5s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 5s 1 forwards;
 }
 
 #lowlevel_text{
-  z-index: 14;
-  margin-top: -54px;
-  animation-duration: 2s;
-  animation-delay: 8s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 8s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 4;
+  animation: logofadeIn 2s ease-in 5s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 5s 1 forwards;
 }
 
-#android {
-  z-index: 2;
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+#android_logo {
+  z-index: 3;
+  animation: logofadeIn 2s ease-in 2s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 2s 1 forwards;
 }
 
 #android_text {
-  z-index: 12;
-  margin-top: -54px;
-  animation-duration: 2s;
-  animation-delay: 5s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 5s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  z-index: 2;
+  animation: logofadeIn 2s ease-in 2s 1 forwards;
+  -webkit-animation: logofadeIn 2s ease-in 2s 1 forwards;
 }
 
 #logo {
   z-index: 1;
+  animation: logofadeOut 3s ease-in 1s 1 forwards;
+  -webkit-animation: logofadeOut 3s ease-in 1s 1 forwards;
+  opacity: 0;
 }
 #logo_text {
   z-index: 0;
   top: 10px;
-  animation-duration: 2s;
-  animation-delay: 2s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
+  animation: logofadeIn 1s ease-in 1s 1 forwards;
+  -webkit-animation: logofadeIn 1s ease-in 1s 1 forwards;
 }
 
 @media only screen and (max-width: 480px) {
