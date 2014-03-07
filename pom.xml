@@ -25,11 +25,11 @@
       <artifactId>jeo-nano</artifactId>
       <version>${jeo.version}</version>
     </dependency>
-    <dependency>
+    <!--dependency>
       <groupId>org.opengeo</groupId>
       <artifactId>geodroid</artifactId>
       <version>${geodroid.version}</version>
-    </dependency>
+    </dependency-->
     <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>android</artifactId>
