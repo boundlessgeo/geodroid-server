@@ -1062,46 +1062,6 @@ th, td {
   color: #FFFFFF;
 }
 
-/* Collapsing of Prev-Next Nav Menu */
-/*------------------------------------------------------------------*/
-
-@media (min-width: 733px) and (max-width: 928px) {
-  .secondarynav ul.right-nav li.previous, li.next {
-    display: inline-block;
-    min-width: 16px;
-  }
-  .secondarynav ul.right-nav {
-    width: 25%;
-  }
-}
-@media (max-width: 732px) {
-  .secondarynav ul.right-nav li.previous, li.next {
-    display: none;
-  }
-  #android {
-    display: none;
-  }
-}
-/* Make sure smaller widths go before larger widths! */
-
-@media (max-width: 928px) {
-  .secondarynav ul.right-nav li.dropdown {
-    display: none;
-  }
-}
-@media (min-width: 929px) {
-  .secondarynav ul.right-nav li.dropdown {
-    display: inline-block;
-    float: right;
-    min-width: 154px;
-    margin-left: 0;
-  }
-  .secondarynav ul.right-nav {
-    width: 35%;
-  }
-}
-
-
 /* Sidebar */
 /*------------------------------------------------------------------*/
 
@@ -1333,6 +1293,64 @@ p.attribution {
   margin: 20px auto 10px auto;
   line-height: 1.5em;
 }
+
+/* Responsive Collapsing of Prev-Next Nav Menu */
+/*------------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+  .secondarynav.breadcrumbs a {
+    font-size: 14px;
+  }
+  .content {
+    padding: 0 5px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 1.8em;
+  }
+  h1, h2, h3 {
+    font-size: 1.6em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+}
+
+@media (min-width: 733px) and (max-width: 928px) {
+  .secondarynav ul.right-nav li.previous, li.next {
+    display: inline-block;
+    min-width: 16px;
+  }
+  .secondarynav ul.right-nav {
+    width: 25%;
+  }
+}
+@media (max-width: 732px) {
+  .secondarynav ul.right-nav li.previous, li.next {
+    display: none;
+  }
+  #android {
+    display: none;
+  }
+}
+/* Make sure smaller widths go before larger widths! */
+
+@media (max-width: 928px) {
+  .secondarynav ul.right-nav li.dropdown {
+    display: none;
+  }
+}
+@media (min-width: 929px) {
+  .secondarynav ul.right-nav li.dropdown {
+    display: inline-block;
+    float: right;
+    min-width: 154px;
+    margin-left: 0;
+  }
+  .secondarynav ul.right-nav {
+    width: 35%;
+  }
+}
+
 
 /* For Print */
 /*------------------------------------------------------------------*/

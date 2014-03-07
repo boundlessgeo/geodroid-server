@@ -48,6 +48,8 @@ li.next {
   font-weight: 600;
   font-size: 18px;
   background-color: #fff;
+  border: 0;
+  box-shadow: none;
   line-height: 40px;
   color: #666;
   position: absolute;
@@ -184,7 +186,7 @@ li.next {
   -webkit-animation: logofadeIn 2s ease-in 2s 1 forwards;
 }
 
-#logo {
+#logo_device {
   z-index: 1;
   animation: logofadeOut 3s ease-in 1s 1 forwards;
   -webkit-animation: logofadeOut 3s ease-in 1s 1 forwards;
@@ -199,13 +201,17 @@ li.next {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
+  }
+  .fadeText {
+    font-size: 14px;
+    line-height: 24px;
   }
   .device {
-    top: 80px;
+    top: 45px;
   }
   .spacer {
-    margin-top: 260px;
+    margin-top: 233px;
   }
   .bottom_spacer {
     margin-top: 110px;
