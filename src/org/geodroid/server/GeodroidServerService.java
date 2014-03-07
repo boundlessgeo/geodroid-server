@@ -103,11 +103,16 @@ public class GeodroidServerService extends Service {
                         Debug.startMethodTracing(TAG, 64*1024*1024);
                     }
                     NanoHTTPD.Response response = super.serve(uri, method, header, parms, files);
+                    return response;
+                }
+
+                @Override
+                protected void requestComplete() {
                     if (enableTracing) {
                         Debug.stopMethodTracing();
                     }
-                    return response;
                 }
+
 
             };
         }
