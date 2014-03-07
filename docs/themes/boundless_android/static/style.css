@@ -6160,15 +6160,32 @@ p.attribution {
 /* Responsive Collapsing of Prev-Next Nav Menu */
 /*------------------------------------------------------------------*/
 @media only screen and (max-width: 480px) {
-  .secondarynav.breadcrumbs a {
-    font-size: 14px;
+  #masthead #logo {
+    padding: 0 0 0 10px;
+  }
+  #masthead #logo img {
+    width: 80%;
+  }
+  .secondarynav {
+    min-height: 58px;
+    height: auto;
+    overflow-y: auto;
+  }
+  .secondarynav .breadcrumbs {
+    padding: 15px 0 0 10px;
+    white-space: normal;
+    width: 100%;
+  }
+  .secondarynav .breadcrumbs a {
+    font-size: 0.9em;
+    padding-bottom: 12px;
   }
   .content {
     padding: 0 5px;
   }
   body {
-    font-size: 14px;
-    line-height: 1.8em;
+    font-size: 1.6em;
+    line-height: 2em;
   }
   h1,
   h2,
@@ -6195,6 +6212,12 @@ p.attribution {
   }
   #android {
     display: none;
+  }
+  .figure img {
+    max-width: 90%;
+  }
+  a {
+    word-break: break-word;
   }
 }
 /* Make sure smaller widths go before larger widths! */
