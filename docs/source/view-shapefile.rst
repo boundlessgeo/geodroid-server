@@ -10,7 +10,7 @@ Load a Shapefile
 
 1. Upload the ``medford_parks`` shapefile to the ``/sdcard/Geodata`` directory on the device. (See :doc:`sample-data` for obtaining a sample file.)
 
-2. Start the Boundless Android Server app and ensure the server is online.
+2. Start the Boundless Server for Android app and ensure the server is online.
 
 3. Navigate to the **Layers** menu. The table should contain a layer named “Medford_Parks” as shown in the figure below:
 

@@ -6,24 +6,24 @@ Installation
 
 **Components**
 
-`1. Boundless Android SDK`_
+`1. Boundless SDK for Android`_
   Android library for building spatial applications.
 
-`2. Boundless Android Server`_
+`2. Boundless Server for Android`_
   Embedded HTTP server providing simple Feature and Tile services.
 
-`3. Boundless Android Viewer`_
-  An OpenLayers Mobile viewer for maps served by Boundless Android Server
+`3. Boundless Viewer for Android`_
+  An OpenLayers Mobile viewer for maps served by Boundless Server for Android
 
 
 
-1. Boundless Android SDK
+1. Boundless SDK for Android
 -------------------------------------
 
 This is an Android library for building spatial applications.
 
-Setting up the Android SDK
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Setting up the SDK
+^^^^^^^^^^^^^^^^^^^
 
 Building the library requires the `Android SDK`_.
 
@@ -37,13 +37,13 @@ and install the following packages:
 * Android SDK SDK Platform-tools
 * Android SDK Build-tools
 
-And finally install the appropriate API package. Currently Boundless Android SDK is built
+And finally install the appropriate API package. Currently Boundless SDK for Android is built
 against "Android 4.0.3 (API 15)". These tools have also been tested on recent versions of the Android platform including Ice Cream Sandwich (4.0) through KitKat (4.4).
 
 Download
 ^^^^^^^^^
 
-`Boundless Android SDK`_
+`Boundless SDK for Android`_
 
 Building
 ^^^^^^^^^
@@ -77,7 +77,7 @@ And finally run Maven to build the library.
     mvn -P tools.jar install
 
 
-2. Boundless Android Server
+2. Boundless Server for Android
 ------------------------------------------
 
 Simple application providing an embedded HTTP server for serving up
@@ -87,20 +87,20 @@ services.
 Download
 ^^^^^^^^^
 
-`Boundless Android SDK`_
+`Boundless SDK for Android`_
 
-Link the Boundless Android SDK library
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Link the Boundless SDK for Android library
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Start by doing a submodule update to bring in the core Boundless Android SDK library.
+Start by doing a submodule update to bring in the core Boundless SDK for Android library.
 
 .. code-block:: console
 
     git submodule update --init
 
 
-Build the Boundless Android Server app
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Build the Boundless Server for Android app
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Navigate back the root directory, update the project and build.
 
@@ -116,7 +116,7 @@ The above should result in a file named ``GeoDroidServer-debug.apk`` being creat
 Installing
 ^^^^^^^^^^^
 
-Install the app on a connected device (e.g. a deviceconnected via USB to a host machine that contains the ``.apk``) by using the ``adb`` command that comes with the Android SDK tools. [See the :doc:`appendix` for more tools and other installation options.]
+Install the app on a connected device (e.g. a deviceconnected via USB to a host machine that contains the ``.apk``) by using the ``adb`` command that comes with the Android SDK tools. [See http://developer.android.com/tools and the :doc:`appendix` for more tools and other installation options.]
 
 .. code-block:: console
 
@@ -127,12 +127,12 @@ Install the app on a connected device (e.g. a deviceconnected via USB to a host 
 Running
 ^^^^^^^^^
 
-After installation, a Boundless Android Server application will be available on your
+After installation, a Boundless Server for Android application will be available on your
 device. Locate the application icon on the home screen:
 
 .. figure:: /img/icon.png
 
-   Boundless Android Server icon
+   Boundless Server for Android icon
 
 When started, there will be a slider to turn the Server on or of in the upper right-hand corner of the screen. Toggle the "OFFLINE" button, upon successful start the button should change to green and read  to "ONLINE".
 
@@ -140,7 +140,7 @@ Verify connectivity on the device by using Chrome to navigate to the URL http://
 
 .. figure:: /img/localhost.png
 
-   Boundless Android Server homepage
+   Boundless Server for Android homepage
 
 When tapped, a browser will open to serve data from ``/sdcard/www/`` on the
 device storage at ``http://localhost:8000/www/``.
@@ -155,22 +155,22 @@ Optionally verify connectivity from the desktop:
 
 
 
-3. Boundless Android Viewer
------------------------------
-A viewer for maps served by Boundless Android Server.
+3. Boundless Viewer for Android
+----------------------------------
+A viewer for maps served by Boundless Server for Android.
 
 Download
 ^^^^^^^^^^
 
-`Boundless Android Viewer`_
+`Boundless Viewer for Android`_
 
 Preparation
 ^^^^^^^^^^^^
 
-Boundless Android Viewer needs `Boundless Android Server`_ installed and running on the
+Boundless Viewer for Android needs `Boundless Server for Android`_ installed and running on the
 Android device.
 
-To make use of Boundless Android Server, it is recommended to install a
+To make use of Boundless Server for Android, it is recommended to install a
 GeoPackage on the device's SD card. This can be done by unpacking the
 contents of the http://data.boundlessgeo.com/mobile/ne.zip GeoPackage to
 ``/sdcard/GeoData/`` on the Android device.
@@ -234,7 +234,7 @@ zoom
 
 .. _Android SDK: http://developer.android.com/sdk/index.html
 .. _Apache Maven: http://maven.apache.org/
-.. _Boundless Android SDK: http://github.com/boundlessgeo/geodroid/
-.. _Boundless Android Server: http://github.com/boundlessgeo/geodroid-server/
-.. _Boundless Android Viewer: http://github.com/ahocevar/geodroid-viewer/
+.. _Boundless SDK for Android: http://github.com/boundlessgeo/geodroid/
+.. _Boundless Server for Android: http://github.com/boundlessgeo/geodroid-server/
+.. _Boundless Viewer for Android: http://github.com/ahocevar/geodroid-viewer/
 

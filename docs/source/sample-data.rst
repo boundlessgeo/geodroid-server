@@ -4,7 +4,7 @@
 Sample Data
 ========================
 
-This page describes how to install some additional reference data sets for trying out the Boundless Android SDK.
+This page describes how to install some additional reference data sets for trying out the Boundless SDK for Android.
 
 Download and unpack the contents of the following to ``/sdcard/GeoData/`` directory on the Android device.
 

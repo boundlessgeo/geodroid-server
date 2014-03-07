@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Boundless Android SDK documentation build configuration file, created by
+# Boundless SDK for Android documentation build configuration file, created by
 # sphinx-quickstart on Tue Feb 18 17:50:24 2014.
 #
 # This file is execfile()d with the current directory set to its
@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'toc'
 
 # General information about the project.
-project = u'Boundless Android SDK'
+project = u'Boundless SDK for Android'
 copyright = u'2014, Boundless'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -190,7 +190,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'BoundlessAndroidSDK.tex', u'Boundless Android SDK Documentation',
+  ('index', 'BoundlessSDKforAndroid.tex', u'Boundless SDK for Android Documentation',
    u'Boundless', 'manual'),
 ]
 
@@ -220,7 +220,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'boundlessandroidsdk', u'Boundless Android SDK Documentation',
+    ('index', 'boundlesssdkforandroid', u'Boundless SDK for Android Documentation',
      [u'Boundless'], 1)
 ]
 
@@ -234,8 +234,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'BoundlessAndroidSDK', u'Boundless Android SDK Documentation',
-   u'Boundless', 'BoundlessAndroidSDK', 'One line description of project.',
+  ('index', 'BoundlessSDKforAndroid', u'Boundless SDK for Android Documentation',
+   u'Boundless', 'BoundlessSDKforAndroid', 'One line description of project.',
    'Miscellaneous'),
 ]
 

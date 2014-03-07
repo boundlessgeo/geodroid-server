@@ -1,14 +1,14 @@
 .. _boundless_android.boundless-android-server:
 
-========================
-Boundless Android Server
-========================
+=============================
+Boundless Server for Android
+=============================
 
 
 Introduction
 ============
 
-Boundless Android Server supports browser based mobile applications that require
+Boundless Server for Android supports browser based mobile applications that require
 bits of native functionality or must run in an offline setting with no
 internet connection available.
 

@@ -4,7 +4,7 @@
 Working with Data
 ========================
 
-This section gives an overview of how to configure Boundless Android Server to serve spatial data.
+This section gives an overview of how to configure Boundless Server for Android to serve spatial data.
 
 Supported Formats
 -----------------

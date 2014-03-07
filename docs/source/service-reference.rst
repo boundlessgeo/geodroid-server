@@ -41,5 +41,5 @@ status code, should note the nature of the problem). The HTTP services provided 
 
 
 
-The various HTTP services provided by Boundless Android Server are outlined further in the next sections.
+The various HTTP services provided by Boundless Server for Android are outlined further in the next sections.
 

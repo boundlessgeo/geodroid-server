@@ -4,11 +4,11 @@
 Overview
 ============
 
-The Boundless Android SDK is made up of two primary components. The first is the low level SDK itself. The second is the mobile server built on top of the SDK.
+The Boundless SDK for Android is made up of two primary components. The first is the low level SDK itself. The second is the mobile server built on top of the SDK.
 
 Lastly, a viewer in HTML and JavaScript runnable in any modern web browser is also included.
 
-SDK
+Mobile SDK
 ============
 
 The SDK component provides the low level functionality for developers to build spatial applications. It itself is not a runnable app but a component that gets included in a runnable app.
@@ -33,8 +33,8 @@ At the moment the following spatial formats are supported:
 * Comma Separated Value (CSV)
 
 
-Server
-============
+Mobile Server
+==============
 
 The mobile server component is a runnable application that serves up data located on the device through HTTP accessible services. At the moment the following services are implemented:
 
