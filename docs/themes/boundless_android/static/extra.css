@@ -1,7 +1,7 @@
 /* For custom site page index.html (not sphinx) */
 
 .spacer {
-  margin-top: 50%;
+  margin-top: 40%;
 }
 .bottom_spacer {
   margin-top: 9%;
@@ -33,9 +33,9 @@ li.next {
 .device {
   position: absolute;
   display: block;
-  left: 10%;
+  left: 20%;
   height: auto;
-  width: 80%;
+  width: 60%;
   top: 50px;
   -webkit-transform: translate3d(0, 0, 0); /*force hw accel*/
   -webkit-backface-visibility: hidden;
@@ -189,12 +189,20 @@ li.next {
     line-height: 24px;
   }
   .device {
-    top: 45px;
-  }
-  .spacer {
-    margin-top: 233px;
+    top: 40px;
   }
   .bottom_spacer {
     margin-top: 110px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .device {
+    width: 90%;
+    left: 5%;
+    top: 40px;
+  }
+  .spacer {
+    margin-top: 60%;
   }
 }
