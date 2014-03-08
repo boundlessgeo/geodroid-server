@@ -11,7 +11,7 @@ Lastly, a viewer in HTML and JavaScript runnable in any modern web browser is al
 Mobile SDK
 ============
 
-The SDK component provides the low level functionality for developers to build spatial applications. It itself is not a runnable app but a component that gets included in a runnable app.
+The Mobile SDK component provides the low level functionality for developers to build spatial applications. It itself is not a runnable app but a component that gets included in a runnable app.
 
 The SDK consists for the most part of support for the following:
 
@@ -36,7 +36,7 @@ At the moment the following spatial formats are supported:
 Mobile Server
 ==============
 
-The mobile server component is a runnable application that serves up data located on the device through HTTP accessible services. At the moment the following services are implemented:
+The Mobile Server component is a runnable application that serves up data located on the device through HTTP accessible services. At the moment the following services are implemented:
 
 .. cssclass:: styled
 

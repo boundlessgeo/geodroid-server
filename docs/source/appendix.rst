@@ -144,7 +144,7 @@ Many of the mobile server tests involve making requests that return JSON output.
 The plugin can be installed from the Chrome web store: https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en.
 
 
-
+.. _workding-with-zip-files:
 
 Working with Zip Files
 ========================
@@ -185,4 +185,3 @@ To update the PATH on Linux or OSX issue the following command:
 .. code-block:: console
 
   % export PATH=`pwd`/geogit/bin:$PATH
-

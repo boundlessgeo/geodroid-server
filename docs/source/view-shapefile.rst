@@ -55,8 +55,7 @@ Reprojecting Features
 
 The feature service is able to re-project features to a specified coordinate system, in this case Spherical Mercator.
 
-More information regarding supported projections can be found in the documentation:
-https://github.com/boundlessgeo/geodroid-server/wiki/Projections
+More information regarding supported projections can be found in the section on :doc:`projections`.
 
 1. In a web browser navigate to the url: http://localhost:8000/features/Medford_Parks/Medford_Parks.json?srs=epsg:900913
 
@@ -92,4 +91,4 @@ The feature service can filter features by attribute filter specified as Common 
 
 .. figure:: /img/cql_medford.png
 
-     Results for a Query Filter for NAME = 'Roosevelt School'
+     Result for an Attribute Filter for NAME = 'Roosevelt School'

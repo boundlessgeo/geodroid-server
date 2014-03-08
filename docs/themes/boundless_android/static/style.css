@@ -6213,9 +6213,6 @@ p.attribution {
   #android {
     display: none;
   }
-  .figure img {
-    max-width: 90%;
-  }
   a {
     word-break: break-word;
   }
@@ -6224,6 +6221,9 @@ p.attribution {
 @media (max-width: 928px) {
   .secondarynav ul.right-nav li.dropdown {
     display: none;
+  }
+  .figure img {
+    max-width: 90%;
   }
 }
 @media (min-width: 929px) {

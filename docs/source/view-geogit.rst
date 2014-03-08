@@ -25,7 +25,7 @@ The general workflow for this section is as follows:
 * `1. Install GeoGit Command Line Tools`_
 * `2. Create a New GeoGit Repository`_
 * `3. Synchronize the Repository with the Server`_
-* `4. Clone the Repository to the Device`_
+* `4. Copy the Repository to the Device`_
 * `5. Make Edits on the Device`_
 * `6. Synchronize Changes from the Device with the Server`_
 
@@ -33,13 +33,13 @@ The general workflow for this section is as follows:
 1. Install GeoGit Command Line Tools
 -------------------------------------
 
-To work with GeoGit repositories, install the GeoGit CLI (Command Line Interface) tools from http://geogit.org.
+To work with GeoGit repositories, install the GeoGit CLI (Command Line Interface) tools from http://geogit.org:
 
-1. Unpack the ``geogit-cli.zip`` file from the test bundle onto the desktop.
+1. Unpack the ``geogit-cli.zip`` file from the GeoGit download.
 
 2. Update the command ``PATH`` so that it includes the bin directory from the cli archive. See :ref:`updating_path` for more info.
 
-3.  Verify the CLI tools are properly installed by issuing the the following command from a command prompt.
+3. Verify the CLI tools are properly installed by issuing the the following command from a command prompt.
 
 .. code-block:: console
 
@@ -49,7 +49,7 @@ To work with GeoGit repositories, install the GeoGit CLI (Command Line Interface
 2. Create a New GeoGit Repository
 ----------------------------------
 
-In this section a new GeoGit repository will be created that will serve as the basis for testing in the following sections.
+In this section a new GeoGit repository will be created that will serve as the basis for the following sections.
 
 1. Using the CLI create a new GeoGit repository with the following command:
 
@@ -57,20 +57,33 @@ In this section a new GeoGit repository will be created that will serve as the b
 
     % geogit init world --config storage.objects=sqlite,storage.staging=sqlite,storage.graph=sqlite,sqlite.version=0.1
 
-2. Unzip the cities.zip file from the test bundle. It contains a Shapefile to be imported into the new GeoGit repository.
+.. admonition:: Note
 
-3. Import the shapefile with the following command:
+    (The additional configuration argument created a GeoGit repository that uses an SQLite storage back end required for GeoGit to work on Android.)
+
+2. Configure the repository using your own username and email address:
 
 .. code-block:: console
 
     % cd world
-    % geogit shp import ../cities.shp
+    % geogit config user.name test-user
+    % geogit config user.email test-user@boundlessgeo.com
+
+3. Unzip the `cities.zip` file from the world.zip provided in the :doc:`sample-data` section. It contains a Shapefile to be imported into the new GeoGit repository.  Copy the unzipped files (`cities.dbf, cities.prj, cities.shp, cities.shx`) to the `world/` directory.
+
+
+4. Import the shapefile with the following command:
+
+.. code-block:: console
+
+    % cd world
+    % geogit shp import cities.shp
 
   The output should look similar to the following:
 
 .. code-block:: console
 
-    Importing from shapefile ../cities.shp
+    Importing from shapefile cities.shp
     Importing cities           (1/1)...
     5%
     20 distinct features inserted in 83.42 ms
@@ -79,9 +92,9 @@ In this section a new GeoGit repository will be created that will serve as the b
 
     20 features tree built in 3.064 ms
     100%
-    ../cities.shp imported successfully.
+    cities.shp imported successfully.
 
-4. Next stage and with the following command:
+5. Next stage the new data with the following command:
 
 .. code-block:: console
 
@@ -92,7 +105,7 @@ In this section a new GeoGit repository will be created that will serve as the b
     20 features and 1 trees staged for commit
     0 features and 0 trees not staged for commit
 
-5. And finally commit:
+6. And finally commit:
 
 .. code-block:: console
 
@@ -101,7 +114,7 @@ In this section a new GeoGit repository will be created that will serve as the b
     [...] Added cities,  initial commit
     Committed, counting objects...20 features added, 0 changed, 0  deleted.
 
-6. To verify the import was successful use the log command:
+7. To verify the import was successful use the log command:
 
 .. code-block:: console
 
@@ -113,7 +126,7 @@ The result should look something like the following:
 
     % geogit log
     Commit:  49511dd5ff447b2980ad322dab5bfb62d7c6feab
-    Author:  jdeolive <jdeolive@boundlessgeo.com>
+    Author:  test-user <test-user@boundlessgeo.com>
     Date:    (6 minutes ago) 2014-03-03 13:29:29 -0700
     Subject: Added cities, initial commit
 
@@ -122,9 +135,10 @@ The result should look something like the following:
 3. Synchronize the Repository with the Server
 -----------------------------------------------
 
-Before the new GeoGit repository is uploaded to the device it will first be synchronized with a server running locally on the desktop.
+Before the new GeoGit repository is uploaded to the device it will first be synchronized with a server running locally on the desktop. To achieve this a second empty repository will be created, whose purpose will be to synchronize with the repository created in the previous section.
 
-1. In a separate directory create a new empty repository named “world”:
+1. In a separate directory create a new empty repository named “world”. This new repository should be created in a separate directory then the repository created in the previous section (and **not** in a level above or below the previous directory).
+
 
 .. code-block:: console
 
@@ -159,15 +173,27 @@ Before the new GeoGit repository is uploaded to the device it will first be sync
 
 .. cssclass:: styled
 
-    - Shut down the server
+    - Shut down the server by going back to the original server terminal and CTRL+C
     - Change directory back to the new repository created in this section
     - Use the geogit log command to verify that the same commits are present
 
+The `geogit log` output should look similar to the following:
+
+.. code-block:: console
+
+    Commit:  ffabcb83750df75d97be794e6a381f13f351811c
+    Author:  test-user <test-user@boundlessgeo.com>
+    Date:    (35 minutes ago) 2014-03-05 15:33:15 -0500
+    Subject: Added cities, initial commit
+
 6.  Once again start the server on the new repository.
 
+.. code-block:: console
+
+  % geogit serve
 
 
-4. Clone the Repository to the Device
+4. Copy the Repository to the Device
 ---------------------------------------
 
 The next step is to upload the GeoGit repository to the device.
@@ -199,13 +225,13 @@ The next step is to upload the GeoGit repository to the device.
     GeoGit repository in OpenLayers
 
 
-**Upload the Sample App**
+**Upload the Sample Viewier App**
 
 A sample OpenLayers-based application will be used to facilitate editing in the next few sections. The first step is to upload the app to the “apps” directory on the device.
 
 1.  Upload the **geogitapp.zip** file from http://data.boundlessgeo.com/mobile/geogitapp.zip to the ``/sdcard/Geodroid/apps`` directory on the device.
 
-2.  Unpack the zip file. Upon success the directory ``/sdcard/Geodroid/apps/geogit`` should exist.
+2.  Unpack the zip file (See :ref:`workding-with-zip-files` for help). Upon success the directory ``/sdcard/Geodroid/apps/geogit`` should exist.
 
 3.  Visit http://localhost:8000/apps/geogit/ in the web browser. The result should be a simple OpenLayers map with some editing tools.
 
@@ -219,21 +245,21 @@ A sample OpenLayers-based application will be used to facilitate editing in the 
 
 **Add a Feature**
 
-Add a new feature to the Geogit repository.
+Add a new feature to the GeoGit repository.
 
-1.  Click on the **Add Feature** tool and then click anywhere on the map to add a new feature.
+1. Click on the **Add Feature** tool and then click anywhere on the map to add a new feature.
 
 .. figure:: /img/geogit_add_feature_tool.png
 
       Add Feature tool
 
-2.  Once the new feature has been added and is highlighted in blue use the **Name** text field on the upper right to specify a name for the new feature.
+2. Once the new feature has been added and is highlighted in blue use the **Name** text field on the upper right to specify a name for the new feature.
 
-3.  Optionally specify a **Commit message** and **Author** using the form components located below the **Name** text field.
+3. Optionally specify a **Commit message** and **Author** using the form components located below the **Name** text field.
 
-4.  Once completed click the **Save** button to save the new feature back to the server.
+4. Once completed click the **Save** button to save the new feature back to the server.
 
-5.  To verify the new feature has been added and persisted on the server reload the web page and verify that the newly added feature is still there.
+5. To verify the new feature has been added and persisted on the server reload the web page and verify that the newly added feature is still there.
 
 .. figure:: /img/geogit_openlayers_add_feature.png
 
@@ -310,22 +336,22 @@ During synchronization the button will change to a spinner icon. Once completed 
 
       % geogit log
       Commit:  176dfd4504f6facb2a0083fc950054c782bfaa7d
-      Author:  jdeolive
+      Author:  test-user
       Date:    (4 minutes ago) 2014-03-03 17:40:39 -0700
       Subject: Removing Vancouver.
 
       Commit:  91359ac336da259985f980215562106253f3809f
-      Author:  jdeolive
+      Author:  test-user
       Date:    (9 minutes ago) 2014-03-03 17:35:18 -0700
       Subject: Putting Calgary in the right place.
 
       Commit:  577da4712175f5bb6d933cf3343eb1a68c23cf6f
-      Author:  jdeolive
+      Author:  test-user
       Date:    (10 minutes ago) 2014-03-03 17:34:32 -0700
       Subject: Added city of Calgary.
 
       Commit:  35acd66d36573e0ae6a0886733ef6bfc54e6377d
-      Author:  jdeolive <jdeolive@boundlessgeo.com>
+      Author:  jdeotest-userlive <test-user@boundlessgeo.com>
       Date:    (12 minutes ago) 2014-03-03 17:36:42 -0700
       Subject: Added cities, initial commit
 

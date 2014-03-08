@@ -55,8 +55,7 @@ Reprojecting Features
 
 The feature service is able to re-project features to a specified coordinate system, in this case Spherical Mercator.
 
-More information regarding supported projections can be found in the documentation:
-https://github.com/boundlessgeo/geodroid-server/wiki/Projections
+More information regarding supported projections can be found in the section on :doc:`projections`.
 
 1. In a web browser navigate to the url: http://localhost:8000/features/va/populated_places.json?srs=epsg:900913
 
@@ -85,7 +84,7 @@ http://localhost:8000/features/va/populated_places.json?filter=NAME+EQ+'Dover'
 
 .. figure:: /img/geopackage_filter.png
 
-  Query Filter result for NAME = 'Dover'
+  Result for an Attribute Filter for NAME = 'Dover'
 
 
 Tile Service

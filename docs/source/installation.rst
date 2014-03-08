@@ -116,7 +116,7 @@ The above should result in a file named ``GeoDroidServer-debug.apk`` being creat
 Installing
 ^^^^^^^^^^^
 
-Install the app on a connected device (e.g. a deviceconnected via USB to a host machine that contains the ``.apk``) by using the ``adb`` command that comes with the Android SDK tools. [See http://developer.android.com/tools and the :doc:`appendix` for more tools and other installation options.]
+Install the app on a connected device (e.g. a deviceconnected via USB to a host machine that contains the ``.apk``) by using the ``adb`` command that comes with the Android SDK tools. [See the :doc:`appendix` for more tools and other installation options.]
 
 .. code-block:: console
 
@@ -136,6 +136,10 @@ device. Locate the application icon on the home screen:
 
 When started, there will be a slider to turn the Server on or of in the upper right-hand corner of the screen. Toggle the "OFFLINE" button, upon successful start the button should change to green and read  to "ONLINE".
 
+
+Verify Connectivity
+^^^^^^^^^^^^^^^^^^^^
+
 Verify connectivity on the device by using Chrome to navigate to the URL http://localhost:8000. The result should be the following web page:
 
 .. figure:: /img/localhost.png
@@ -154,6 +158,16 @@ Optionally verify connectivity from the desktop:
 * The same web page as shown above should be visible.
 
 
+Configuring the Server Port
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To configure a different port on the device for serving data, navigate to the "Settings" menu of the Server app and select the "Port" option. Change the port the service is running on.
+
+.. figure:: /img/serverport.png
+
+   Configuring the Server's port
+
+
 
 3. Boundless Viewer for Android
 ----------------------------------
@@ -167,8 +181,7 @@ Download
 Preparation
 ^^^^^^^^^^^^
 
-Boundless Viewer for Android needs `Boundless Server for Android`_ installed and running on the
-Android device.
+Boundless Viewer for Android needs `Boundless Server for Android`_ installed and running on the Android device.
 
 To make use of Boundless Server for Android, it is recommended to install a
 GeoPackage on the device's SD card. This can be done by unpacking the
@@ -181,8 +194,7 @@ Installation
 
 To install the viewer, copy the contents of this folder to
 ``/sdcard/www/`` on your Android device. To make sure that everything
-works, navigate to
-http://localhost:8000/www/?layers=ne:tiles&features=ne:populated_places&center=48,16&zoom=4.
+works, navigate to http://localhost:8000/www/?layers=ne:tiles&features=ne:populated_places&center=48,16&zoom=4.
 
 URL Parameters
 ^^^^^^^^^^^^^^
@@ -230,6 +242,11 @@ zoom
 
         zoom=<zoomlevel>
 
+
+GeoGit Viewer
+^^^^^^^^^^^^^^
+
+Another sample viewer application that can be used with a GeoGit repository is available in the :doc:`view-geogit` section.
 
 
 .. _Android SDK: http://developer.android.com/sdk/index.html

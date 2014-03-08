@@ -13,7 +13,7 @@ Supported Coordinate Reference Systems
 While the underlying proj4j library can handle many different coordinate
 reference systems (crs), Geodroid server limits to those that are
 represented by an `epsg`_ code. The entire list of supported coordinate
-reference systems is defined `here`_.
+reference systems is defined `here in the project sourcecode`_.
 
 A crs object is specified with the syntax is ``<authority>:<code>``.
 Examples:
@@ -23,4 +23,4 @@ Examples:
 
 .. _proj4j: http://trac.osgeo.org/proj4j/
 .. _epsg: http://www.epsg.org/
-.. _here: https://raw.github.com/jdeolive/proj4j/master/src/main/resources/nad/epsg
+.. _here in the project sourcecode: https://raw.github.com/jdeolive/proj4j/master/src/main/resources/nad/epsg
