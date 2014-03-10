@@ -6,6 +6,7 @@ Feature Service
 
 The feature service provides access to vector (feature) data.
 
+
 Get a feature collection
 ~~~~~~~~~~~~~~~~~~~~~~~~
 

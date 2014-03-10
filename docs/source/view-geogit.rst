@@ -57,7 +57,7 @@ In this section a new GeoGit repository will be created that will serve as the b
 
     % geogit init world --config storage.objects=sqlite,storage.staging=sqlite,storage.graph=sqlite,sqlite.version=0.1
 
-.. admonition:: Note
+.. note::
 
     (The additional configuration argument created a GeoGit repository that uses an SQLite storage back end required for GeoGit to work on Android.)
 
@@ -158,7 +158,7 @@ Before the new GeoGit repository is uploaded to the device it will first be sync
     % cd world
     % geogit remote add origin http://192.168.1.101:8182
 
-.. admonition:: Note
+.. note::
 
     Replace “192.168.1.101” with the IP address of the local machine. This address must be visible from the mobile device so do not use “localhost”.
 

@@ -15,6 +15,10 @@ Installation
 `3. Boundless Viewer for Android`_
   An OpenLayers Mobile viewer for maps served by Boundless Server for Android
 
+.. note::
+
+  All components in this toolkit are still undergoing development and not final.
+
 
 
 1. Boundless SDK for Android
@@ -40,8 +44,8 @@ and install the following packages:
 And finally install the appropriate API package. Currently Boundless SDK for Android is built
 against "Android 4.0.3 (API 15)". These tools have also been tested on recent versions of the Android platform including Ice Cream Sandwich (4.0) through KitKat (4.4).
 
-Download
-^^^^^^^^^
+Git Clone
+^^^^^^^^^^
 
 `Boundless SDK for Android`_
 
@@ -76,6 +80,8 @@ And finally run Maven to build the library.
 
     mvn -P tools.jar install
 
+The maven installation will also download the `jeo`_ spatial library, a lightweight, simple geo library for the JVM. [See also `jeo-android`_.]
+
 
 2. Boundless Server for Android
 ------------------------------------------
@@ -84,10 +90,10 @@ Simple application providing an embedded HTTP server for serving up
 GeoPackage and MBTiles packages through simple Feature and Tile
 services.
 
-Download
-^^^^^^^^^
+Git Clone
+^^^^^^^^^^
 
-`Boundless SDK for Android`_
+`Boundless Server for Android`_
 
 Link the Boundless SDK for Android library
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -173,8 +179,8 @@ To configure a different port on the device for serving data, navigate to the "S
 ----------------------------------
 A viewer for maps served by Boundless Server for Android.
 
-Download
-^^^^^^^^^^
+Git Clone
+^^^^^^^^^^^^
 
 `Boundless Viewer for Android`_
 
@@ -252,6 +258,9 @@ Another sample viewer application that can be used with a GeoGit repository is a
 .. _Android SDK: http://developer.android.com/sdk/index.html
 .. _Apache Maven: http://maven.apache.org/
 .. _Boundless SDK for Android: http://github.com/boundlessgeo/geodroid/
+.. _jeo: http://jeo.github.io
+.. _jeo-android: https://github.com/jdeolive/jeo-android
 .. _Boundless Server for Android: http://github.com/boundlessgeo/geodroid-server/
 .. _Boundless Viewer for Android: http://github.com/ahocevar/geodroid-viewer/
+
 

@@ -29,3 +29,8 @@ The specific APIs are:
 -  A :doc:`tile-service` for serving up tile based data sets
 
 
+.. note::
+
+   All components in this toolkit are still undergoing development and not final.
+
+

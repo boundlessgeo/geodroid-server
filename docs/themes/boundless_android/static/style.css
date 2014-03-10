@@ -5974,6 +5974,12 @@ td {
 .sidebar_header {
   color: #6e920f;
 }
+.sidebar_header a {
+  text-decoration: none;
+}
+.sidebar_header a:hover {
+  color: #28718d;
+}
 .sidebar_section ul {
   list-style: none;
   margin-left: 0;

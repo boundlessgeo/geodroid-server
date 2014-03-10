@@ -19,3 +19,6 @@ For helpful tools and installation procedures, refer to :ref:`getting-data-on-th
    view-geogit
 
 
+.. note::
+
+   All components in this toolkit are still undergoing development and not final.

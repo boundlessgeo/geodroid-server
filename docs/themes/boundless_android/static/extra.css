@@ -81,10 +81,15 @@ li.next {
   to {opacity: 1;}
 }
 
+#beta_text{
+  z-index: 17;
+  animation: logofadeIn 1600ms ease-in 24400ms 1 forwards;
+  -webkit-animation: logofadeIn 1600ms ease-in 24400ms 1 forwards;
+}
 #end_text{
   z-index: 17;
-  animation: logofadeIn 1600ms ease-in 21400ms 1 forwards;
-  -webkit-animation: logofadeIn 1600ms ease-in 21400ms 1 forwards;
+  animation: logofadeIn 1400ms ease-in 21400ms 1 forwards;
+  -webkit-animation: logofadeIn 1400ms ease-in 21400ms 1 forwards;
 }
 #wifi {
   z-index: 18;

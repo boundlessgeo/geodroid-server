@@ -8,6 +8,11 @@ The data service provides information about data that the server is
 publishing. See :doc:`working-with-data` for information about data
 configuration.
 
+.. note::
+
+   All components in this toolkit are still undergoing development and not final, including the following API.
+
+
 List all data objects
 ~~~~~~~~~~~~~~~~~~~~~
 

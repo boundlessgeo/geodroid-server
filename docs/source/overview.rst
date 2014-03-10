@@ -4,9 +4,13 @@
 Overview
 ============
 
-The Boundless SDK for Android is made up of two primary components. The first is the low level SDK itself. The second is the mobile server built on top of the SDK.
+The Boundless SDK for Android is made up of two primary components. The first is the low level SDK itself that uses `jeo`_, a lightweight spatial library for the JVM (as a simplified alternative to GeoTools). The second is a mobile server built on top of the SDK. Lastly, a viewer in HTML and JavaScript runnable in any modern web browser is also included.
 
-Lastly, a viewer in HTML and JavaScript runnable in any modern web browser is also included.
+.. note::
+
+   All components in this toolkit are still undergoing development and not final.
+
+
 
 Mobile SDK
 ============
@@ -45,3 +49,6 @@ The Mobile Server component is a runnable application that serves up data locate
 * Tile service for publishing tile data
 
 Along with the HTTP server is a management application that is used to control the server as well as browse through published data sets.
+
+
+.. _jeo: http://jeo.github.io/
