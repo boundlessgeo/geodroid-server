@@ -99,8 +99,8 @@ li.next {
 }
 #ol_text{
   z-index: 15;
-  animation: logofadeIn 1600ms ease-in 16800ms 1 forwards;
-  -webkit-animation: logofadeIn 1600ms ease-in 16800ms 1 forwards;
+  animation: logofadeIn 1300ms ease-in 16800ms 1 forwards;
+  -webkit-animation: logofadeIn 1300ms ease-in 16800ms 1 forwards;
 }
 #features {
   z-index: 14;
@@ -109,8 +109,8 @@ li.next {
 }
 #feature_text {
   z-index: 13;
-  animation: logofadeIn 1600ms ease-in 13800ms 1 forwards;
-  -webkit-animation: logofadeIn 1600ms ease-in 13800ms 1 forwards;
+  animation: logofadeIn 1500ms ease-in 13900ms 1 forwards;
+  -webkit-animation: logofadeIn 1500ms ease-in 13900ms 1 forwards;
 }
 #land {
   z-index: 12;
@@ -134,8 +134,8 @@ li.next {
 }
 #projections_text {
   z-index: 8;
-  animation: logofadeIn 1800ms ease-in 8900ms 1 forwards;
-  -webkit-animation: logofadeIn 1800ms ease-in 8900ms 1 forwards;
+  animation: logofadeIn 1400ms ease-in 8900ms 1 forwards;
+  -webkit-animation: logofadeIn 1400ms ease-in 8900ms 1 forwards;
 }
 #formats {
   z-index: 7;
@@ -144,8 +144,8 @@ li.next {
 }
 #formats_text {
   z-index: 6;
-  animation: logofadeIn 1800ms ease-in 6400ms 1 forwards;
-  -webkit-animation: logofadeIn 1800ms ease-in 6400ms 1 forwards;
+  animation: logofadeIn 1400ms ease-in 6600ms 1 forwards;
+  -webkit-animation: logofadeIn 1400ms ease-in 6600ms 1 forwards;
 }
 #lowlevel {
   z-index: 5;
@@ -154,8 +154,8 @@ li.next {
 }
 #lowlevel_text{
   z-index: 4;
-  animation: logofadeIn 1600ms ease-in 4000ms 1 forwards;
-  -webkit-animation: logofadeIn 1600ms ease-in 4000ms 1 forwards;
+  animation: logofadeIn 1300ms ease-in 4000ms 1 forwards;
+  -webkit-animation: logofadeIn 1300ms ease-in 4000ms 1 forwards;
 }
 #android_logo {
   z-index: 3;
