@@ -6,7 +6,7 @@ Table of Contents
 
 .. note::
 
-   All components in this toolkit are still undergoing development and not final.
+   The components in this toolkit are undergoing continuous development and not final.
 
 
 

@@ -8,14 +8,14 @@ The Boundless SDK for Android is made up of two primary components. The first is
 
 .. note::
 
-   All components in this toolkit are still undergoing development and not final.
+   The components in this toolkit are undergoing continuous development and not final.
 
 
 
 Mobile SDK
 ============
 
-The Mobile SDK component provides the low level functionality for developers to build spatial applications. It itself is not a runnable app but a component that gets included in a runnable app.
+Based on the `jeo`_ spatial library, the Mobile SDK component provides the low level functionality for developers to build spatial applications. It itself is not a runnable app but a component that gets included in a runnable app.
 
 The SDK consists for the most part of support for the following:
 

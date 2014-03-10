@@ -21,4 +21,4 @@ For helpful tools and installation procedures, refer to :ref:`getting-data-on-th
 
 .. note::
 
-   All components in this toolkit are still undergoing development and not final.
+   The components in this toolkit are undergoing continuous development at this time and not final.

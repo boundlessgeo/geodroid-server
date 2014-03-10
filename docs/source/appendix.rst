@@ -185,3 +185,6 @@ To update the PATH on Linux or OSX issue the following command:
 .. code-block:: console
 
   % export PATH=`pwd`/geogit/bin:$PATH
+
+
+
