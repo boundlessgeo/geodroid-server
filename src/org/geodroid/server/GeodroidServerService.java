@@ -3,7 +3,6 @@ package org.geodroid.server;
 import static org.geodroid.server.GeodroidServer.TAG;
 
 import java.io.IOException;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -12,7 +11,6 @@ import com.google.common.collect.Iterators;
 import org.geodroid.app.GeoApplication;
 import org.jeo.android.graphics.Android2D;
 import org.jeo.data.DataRepositoryView;
-import org.jeo.map.View;
 import org.jeo.map.render.RendererFactory;
 import org.jeo.map.render.RendererRegistry;
 import org.jeo.nano.AppsHandler;
@@ -29,8 +27,6 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Binder;
@@ -43,6 +39,8 @@ import android.os.IBinder;
 import android.util.Log;
 import java.util.Properties;
 import org.jeo.nano.NanoHTTPD;
+import org.jeo.nano.WMSHandler;
+import org.jeo.nano.WMTSHandler;
 
 public class GeodroidServerService extends Service {
 
@@ -64,6 +62,8 @@ public class GeodroidServerService extends Service {
         handlers.add(new TileHandler());
         handlers.add(new FeatureHandler());
         handlers.add(new StyleHandler());
+        handlers.add(new WMSHandler());
+        handlers.add(new WMTSHandler());
         handlers.add(new AppsHandler(p.getAppsDirectory()));
 
         // to enable tracing, set the tag level to DEBUG:
