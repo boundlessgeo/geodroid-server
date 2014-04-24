@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Filters Testing App</title>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <link rel="stylesheet" href="../shared/ol/theme/default/style.mobile.css" type="text/css">
+        <link rel="stylesheet" href="../shared/ol/theme/default/style.css" type="text/css">
+        <link rel="stylesheet" href="app.css" type="text/css">
+
+        <script src="../shared/jquery.min.js"></script>
+        <script src="../shared/ol/OpenLayers.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body>        
+        <div id="map"></div>
+        <div id="buttons">
+            <span id="point"><i></i></span>
+            <span id="line"><i></i></span>
+            <span id="polygon"><i></i></span>
+            <span id="box"><i></i></span>
+        </div>
+        <div id="status"></div>
+        <div id="filter-panel">
+            <div id="filters"></div>
+        </div>
+        <script>
+            init();
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial;
+    color: white;
+    background: gray;
+}
+
+#map {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+#filter-panel {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+#filters {
+    overflow: auto;
+    height: 100%;
+}
+
+#filters * {
+    display: block;
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    word-break: break-all;
+    white-space: normal;
+}
+
+#buttons {
+    width: 75%;
+    margin: 0 auto;
+    display: table;
+}
+
+#buttons span i {
+    display: block;
+    height: 24px;
+    margin: 0 auto;
+    width: auto;
+}
+
+#buttons span {
+    display: table-cell;
+    padding: 12px;
+}
+
+#status {
+    height: 1em;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+
+.selected {
+    background: highlight;
+}
+
+#point i {
+    background: url(../shared/ol/theme/default/img/draw_point_on.png) no-repeat 50%;
+}
+
+#line i {
+    background: url(../shared/ol/theme/default/img/draw_line_on.png) no-repeat 50%;
+}
+
+#polygon i {
+    background: url(../shared/ol/theme/default/img/draw_polygon_on.png) no-repeat 50%;
+}
+
+#box i {
+    background: url(../shared/ol/theme/default/img/drag-rectangle-on.png) no-repeat 50%;
+}
