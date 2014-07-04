@@ -179,8 +179,8 @@
   </profiles>
 
   <properties>
-    <jeo.version>0-SNAPSHOT</jeo.version>
-    <geodroid.version>0-SNAPSHOT</geodroid.version>
+    <jeo.version>0.4</jeo.version>
+    <geodroid.version>0.4</geodroid.version>
     <build.mode>debug</build.mode>
     <maven.build.timestamp.format>E MMM dd, yyyy @ HH:mm z</maven.build.timestamp.format>
     <build.prettydate>${maven.build.timestamp}</build.prettydate>
